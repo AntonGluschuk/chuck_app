@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,8 @@
       <workItem from="1588501158018" duration="7932000" />
       <workItem from="1588523793533" duration="1032000" />
       <workItem from="1588587645566" duration="9130000" />
-      <workItem from="1588600301049" duration="6370000" />
+      <workItem from="1588600301049" duration="6438000" />
+      <workItem from="1588663995937" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -81,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588601817940</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="19:04 04/05/20 finished button onChange, start working on radio buttons.">
+      <created>1588608295653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588608295653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit, working on button onChange" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit, working on button onChange" />
+    <MESSAGE value="19:04 04/05/20 finished button onChange, start working on radio buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="19:04 04/05/20 finished button onChange, start working on radio buttons." />
   </component>
 </project>
