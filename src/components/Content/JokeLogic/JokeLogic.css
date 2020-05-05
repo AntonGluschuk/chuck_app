@@ -1,0 +1,23 @@
+.select_option {
+    grid-area: sc;
+}
+
+.select_option > input {
+    margin: 10px 0;
+}
+
+.select_option button {
+    margin: 20px 0;
+    padding: 15px 30px;
+    background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+    border-radius: 10px;
+}
+
+.joke_itself {
+    grid-area: fc;
+    margin: 20px 0;
+    padding: 100px;
+    background: #F8F8F8;
+    border-radius: 20px;
+}
+
