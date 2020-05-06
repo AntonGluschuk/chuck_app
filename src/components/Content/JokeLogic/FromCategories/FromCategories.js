@@ -1,6 +1,6 @@
 import React from "react";
 
-function FromCategories() {
+function FromCategories({ selected, handleOptionChange }) {
     return (
         <div className="form-check">
             <label>
@@ -8,6 +8,8 @@ function FromCategories() {
                     type="radio"
                     name="react-tips"
                     value="option2"
+                    defaultChecked={selected === "option2"}
+                    onChange={handleOptionChange}
                     className="form-check-input"
                 />
                 From Categories

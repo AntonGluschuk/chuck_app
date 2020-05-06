@@ -2,3 +2,29 @@
     /*position: relative;*/
     /*text-align: center;*/
 }
+
+#id {
+    margin: 0;
+    color: #ABABAB;
+}
+
+#link {
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    background: url('images/external-link.png') no-repeat 100% 0;
+    background-size: 14px 14px;
+    padding-right: 19px;
+    color: #8EA7FF;
+}
+
+#joke {
+    margin: 0;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+}

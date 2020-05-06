@@ -1,6 +1,6 @@
 import React from "react";
 
-function Random() {
+function Random({ selected, handleOptionChange }) {
     return (
         <div className="form-check">
             <label>
@@ -8,7 +8,8 @@ function Random() {
                     type="radio"
                     name="react-tips"
                     value="option1"
-                    defaultChecked={true}
+                    defaultChecked={selected === "option1"}
+                    onChange={handleOptionChange}
                     className="form-check-input"
                 />
                 Random

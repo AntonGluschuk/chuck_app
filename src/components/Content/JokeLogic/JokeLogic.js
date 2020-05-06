@@ -9,6 +9,8 @@ import JokeItself from "./JokeItself/JokeItself";
 function JokeLogic() {
     const [data, setData] = useState({});
     const [count, setCount] = useState(0);
+    const [selected, setSelected] = useState("option1");
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         axios.get('https://api.chucknorris.io/jokes/random')
@@ -21,18 +23,44 @@ function JokeLogic() {
             })
     }, [count]);
 
+    useEffect(() => {
+        axios.get('https://api.chucknorris.io/jokes/categories')
+            .then(response => {
+                console.log(response);
+                setCategories(response.data);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }, []);
+
+    const handleOptionChange = e => {
+       setSelected(e.target.value);
+    };
+
+    const handleFormSubmit = e => {
+      e.preventDefault();
+      console.log("You have submitted: ", selected);
+    };
+
     return (
         <div className="joke_logic">
             <div className="select_option">
-                <form>
-                    <Random/>
-                    <FromCategories/>
-                    <Search/>
-                    <button type="button" className="btn" onClick={() => setCount(count + 1)}>Get a joke</button>
+                <form onSubmit={handleFormSubmit}>
+                    <Random defaultChecked={selected} handleOptionChange={handleOptionChange}/>
+                    <FromCategories defaultChecked={selected} handleOptionChange={handleOptionChange}/>
+                    <ul>
+                        {categories.map(category => <li>{category}</li>)}
+                    </ul>
+                    <Search defaultChecked={selected} handleOptionChange={handleOptionChange}/>
+                    <button type="submit" className="btn" onClick={() => setCount(count + 1)}>Get a joke</button>
                 </form>
             </div>
             <div className="joke_itself">
-                <JokeItself value={data.value}/>
+                <JokeItself
+                    value={data.value}
+                    id={data.id}
+                />
             </div>
         </div>
     );
