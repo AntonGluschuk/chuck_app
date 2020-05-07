@@ -1,11 +1,14 @@
+/*Main and SideBar*/
+
 .main_content {
+  margin: 0;
   font-family: Roboto, serif;
   display: grid;
   grid-template-areas:
           "c s";
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
   height: 100vh;
-  margin: 0;
   background: #FFFFFF;
 }

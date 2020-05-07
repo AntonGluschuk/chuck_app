@@ -1,15 +1,27 @@
+/*Rectangle with a joke*/
+
 .joke {
-    /*position: relative;*/
-    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 100px;
+    background: #F8F8F8;
+    border-radius: 20px;
 }
 
+/*Joke ID*/
+
 #id {
+    align-self: flex-start;
     margin: 0;
     color: #ABABAB;
 }
 
+/*Joke link*/
+
 #link {
-    font-family: Roboto, serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -20,9 +32,12 @@
     color: #8EA7FF;
 }
 
-#joke {
-    margin: 0;
-    font-family: Roboto, serif;
+/*Joke value*/
+
+#joke_value {
+    align-self: flex-start;
+    text-align: left;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

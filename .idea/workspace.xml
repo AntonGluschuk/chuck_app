@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/external-link.png" afterDir="false" />
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="21:49 07/05/20 finished css, start categories and search">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/FromCategories/CategoriesItself/CategoriesItself.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/FromCategories/CategoriesItself/CategoriesItself.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/FromCategories/FromCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/FromCategories/FromCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Random/Random.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Random/Random.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +106,8 @@
       <workItem from="1588665543605" duration="1402000" />
       <workItem from="1588668273967" duration="16836000" />
       <workItem from="1588767189268" duration="401000" />
-      <workItem from="1588767619229" duration="13582000" />
+      <workItem from="1588767619229" duration="13940000" />
+      <workItem from="1588860748557" duration="12420000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588709848319</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="21:03 06/05/20 finished radio_b, start handle categories">
+      <created>1588788308694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588788308694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +169,8 @@
     <MESSAGE value="19:04 04/05/20 finished button onChange, start working on radio buttons." />
     <MESSAGE value="10:59 05/05/20 deploy demo to the gh-pages" />
     <MESSAGE value="23:17 05/05/20 setup project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="23:17 05/05/20 setup project structure" />
+    <MESSAGE value="21:03 06/05/20 finished radio_b, start handle categories" />
+    <MESSAGE value="21:49 07/05/20 finished css, start categories and search" />
+    <option name="LAST_COMMIT_MESSAGE" value="21:49 07/05/20 finished css, start categories and search" />
   </component>
 </project>

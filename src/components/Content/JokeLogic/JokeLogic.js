@@ -5,6 +5,7 @@ import Random from "./Random/Random";
 import FromCategories from "./FromCategories/FromCategories";
 import Search from "./Search/Search";
 import JokeItself from "./JokeItself/JokeItself";
+import CategoriesItself from "./FromCategories/CategoriesItself/CategoriesItself";
 
 function JokeLogic() {
     const [data, setData] = useState({});
@@ -38,30 +39,39 @@ function JokeLogic() {
        setSelected(e.target.value);
     };
 
-    const handleFormSubmit = e => {
-      e.preventDefault();
-      console.log("You have submitted: ", selected);
-    };
-
     return (
         <div className="joke_logic">
             <div className="select_option">
-                <form onSubmit={handleFormSubmit}>
+                <form>
+                    {/* Maybe rename to RandomRadioButton*/}
                     <Random defaultChecked={selected} handleOptionChange={handleOptionChange}/>
+                    {/* Maybe rename to FromCategoriesRadioButton*/}
                     <FromCategories defaultChecked={selected} handleOptionChange={handleOptionChange}/>
-                    <ul>
-                        {categories.map(category => <li>{category}</li>)}
-                    </ul>
+                    {/* Maybe rename to CategoriesList*/}
+                    {(selected === "option2") ?
+                        <CategoriesItself selected={selected} categories={categories.slice(0, 4)}/>
+                        :
+                        null
+                    }
+                    {/* Maybe rename to SearchRadioButton*/}
                     <Search defaultChecked={selected} handleOptionChange={handleOptionChange}/>
-                    <button type="submit" className="btn" onClick={() => setCount(count + 1)}>Get a joke</button>
+                    {(selected === "option3") ?
+                        <div className="search">
+                            <input
+                                type="text"
+                                placeholder="Free text search..."
+                            />
+                        </div>
+                        :
+                        null
+                    }
+                    <button className="btn" onClick={() => setCount(count + 1)}>Get a joke</button>
                 </form>
             </div>
-            <div className="joke_itself">
-                <JokeItself
-                    value={data.value}
-                    id={data.id}
-                />
-            </div>
+            <JokeItself
+                value={data.value}
+                id={data.id}
+            />
         </div>
     );
 }

@@ -1,5 +1,7 @@
+/*SideBar*/
+
 .sidebar {
     grid-area: s;
-
+    font-family: inherit;
     background: #F8F8F8;
 }

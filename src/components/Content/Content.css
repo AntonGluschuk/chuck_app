@@ -1,14 +1,7 @@
+/*Main*/
+
 .content {
-    /*grid-area: c;*/
-    /*place-self: center center;*/
-    /*display: grid;*/
-    /*grid-template-areas:*/
-    /*        "sc"*/
-    /*        "fc";*/
-    /*grid-template-rows: 1fr 2fr;*/
-    /*grid-template-columns: 1fr;*/
+    grid-area: c;
+    font-family: inherit;
 }
 
-.intro {
-    /*margin: 20px 0;*/
-}
