@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Random/Random.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Random/Random.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/Search.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeOptions" />
       <recent name="C:\msi2020\src\components\Content\JokeLogic" />
       <recent name="C:\msi2020\src\components\Content" />
       <recent name="C:\msi2020\src\components\JokeLogic" />
@@ -98,7 +105,7 @@
       <workItem from="1588767189268" duration="401000" />
       <workItem from="1588767619229" duration="13940000" />
       <workItem from="1588860748557" duration="12469000" />
-      <workItem from="1588927784547" duration="602000" />
+      <workItem from="1588927784547" duration="9244000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -142,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588877503475</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="12:04 08/05/20 fixed comments">
+      <created>1588928673286</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588928673286</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +184,7 @@
     <MESSAGE value="21:03 06/05/20 finished radio_b, start handle categories" />
     <MESSAGE value="21:49 07/05/20 finished css, start categories and search" />
     <MESSAGE value="21:49 07/05/20 refactor css, start categories and search" />
-    <option name="LAST_COMMIT_MESSAGE" value="21:49 07/05/20 refactor css, start categories and search" />
+    <MESSAGE value="12:04 08/05/20 fixed comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="12:04 08/05/20 fixed comments" />
   </component>
 </project>

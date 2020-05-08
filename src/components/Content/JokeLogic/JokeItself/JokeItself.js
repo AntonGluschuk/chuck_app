@@ -6,6 +6,7 @@ function JokeItself(props) {
         <div className="joke">
             <div id="id">ID: <a id="link" href={props.id}>{props.id}</a></div> <br/>
             <div id="joke_value">{props.value}</div>
+            <div id="joke_category">{props.category}</div>
         </div>
     );
 }
