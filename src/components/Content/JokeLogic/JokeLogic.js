@@ -43,17 +43,17 @@ function JokeLogic() {
         <div className="joke_logic">
             <div className="select_option">
                 <form>
-                    {/* Maybe rename to RandomRadioButton*/}
+                    {/* Random RadioButton*/}
                     <Random defaultChecked={selected} handleOptionChange={handleOptionChange}/>
-                    {/* Maybe rename to FromCategoriesRadioButton*/}
+                    {/* FromCategories RadioButton*/}
                     <FromCategories defaultChecked={selected} handleOptionChange={handleOptionChange}/>
-                    {/* Maybe rename to CategoriesList*/}
+                    {/* Categories List*/}
                     {(selected === "option2") ?
                         <CategoriesItself selected={selected} categories={categories.slice(0, 4)}/>
                         :
                         null
                     }
-                    {/* Maybe rename to SearchRadioButton*/}
+                    {/* Search RadioButton*/}
                     <Search defaultChecked={selected} handleOptionChange={handleOptionChange}/>
                     {(selected === "option3") ?
                         <div className="search">
