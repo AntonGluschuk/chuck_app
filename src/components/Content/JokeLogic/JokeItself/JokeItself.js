@@ -1,12 +1,12 @@
 import React from "react";
 import "./JokeItself.css";
 
-function JokeItself(props) {
+function JokeItself({ id, value, category }) {
     return (
         <div className="joke">
-            <div id="id">ID: <a id="link" href={props.id}>{props.id}</a></div> <br/>
-            <div id="joke_value">{props.value}</div>
-            <div id="joke_category">{props.category}</div>
+            <div className="id">ID: <a id="link" href={id}>{id}</a></div> <br/>
+            <div className="joke_value">{value}</div>
+            <div className="joke_category">{category}</div>
         </div>
     );
 }

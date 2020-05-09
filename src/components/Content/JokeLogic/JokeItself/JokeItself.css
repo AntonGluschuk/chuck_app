@@ -12,7 +12,7 @@
 
 /*Joke ID*/
 
-#id {
+.id {
     align-self: flex-start;
     margin: 0;
     color: #ABABAB;
@@ -34,7 +34,7 @@
 
 /*Joke value*/
 
-#joke_value {
+.joke_value {
     align-self: flex-start;
     text-align: left;
     font-family: inherit;
@@ -46,8 +46,7 @@
 
 /*Joke category*/
 
-#joke_category {
-    padding: 5px;
+.joke_category {
     text-align: center;
     align-content: center;
     align-self: flex-end;
@@ -57,8 +56,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #333333;
 }
+

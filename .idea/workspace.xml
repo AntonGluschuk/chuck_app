@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="21:17 09/05/20 fix render by clicking button Get a Joke">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Random/Random.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Random/Random.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/CategoriesItself/CategoriesItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/CategoriesItself/CategoriesItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -105,7 +108,10 @@
       <workItem from="1588767189268" duration="401000" />
       <workItem from="1588767619229" duration="13940000" />
       <workItem from="1588860748557" duration="12469000" />
-      <workItem from="1588927784547" duration="9244000" />
+      <workItem from="1588927784547" duration="9563000" />
+      <workItem from="1588960379559" duration="1487000" />
+      <workItem from="1589025426096" duration="2952000" />
+      <workItem from="1589033312762" duration="12394000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -156,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588928673286</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="20:14 08/05/20 make JokeOptions component, change project structure">
+      <created>1588958104959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588958104959</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +198,8 @@
     <MESSAGE value="21:49 07/05/20 finished css, start categories and search" />
     <MESSAGE value="21:49 07/05/20 refactor css, start categories and search" />
     <MESSAGE value="12:04 08/05/20 fixed comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="12:04 08/05/20 fixed comments" />
+    <MESSAGE value="20:14 08/05/20 make JokeOptions component, change project structure" />
+    <MESSAGE value="21:17 09/05/20 fix render by clicking button Get a Joke" />
+    <option name="LAST_COMMIT_MESSAGE" value="21:17 09/05/20 fix render by clicking button Get a Joke" />
   </component>
 </project>
