@@ -8,20 +8,3 @@
     margin: 10px 0;
     padding: 0 5px;
 }
-
-/*Category itself*/
-
-.category_btn {
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ABABAB;
-    background-color: white;
-    border: 2px solid #F8F8F8;
-    box-sizing: border-box;
-    border-radius: 6px;
-}

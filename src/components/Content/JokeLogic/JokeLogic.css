@@ -1,2 +1,15 @@
+/*Get a joke button*/
 
+.btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    margin: 20px 0;
+    padding: 15px 30px;
+    background: linear-gradient(92.01deg, #8EA7FF 0%, #7291FF 100%);
+    border-radius: 10px;
+}
 

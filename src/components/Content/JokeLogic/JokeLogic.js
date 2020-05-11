@@ -5,11 +5,12 @@ import JokeOptions from "./JokeOptions/JokeOptions";
 
 function JokeLogic() {
     const [data, setData] = useState({});
-    const [joke, setJoke] = useState("");
-    // const [jokesList, setJokesList] = useState([]);
+    const [jokes, setJokes] = useState([]);
     const [loading, setLoading] = useState(false);
     const [selected, setSelected] = useState("option1");
     const [categories, setCategories] = useState([]);
+    const [active, setActive] = useState(categories[0]);
+    const [query, setQuery] = useState('punch');
 
     useEffect(() => {
         setLoading(true);
@@ -17,7 +18,6 @@ function JokeLogic() {
         fetch('https://api.chucknorris.io/jokes/categories')
             .then(res => res.json())
             .then(res => {
-                console.log(res);
                 setCategories(res);
                 setLoading(false);
             })
@@ -25,48 +25,71 @@ function JokeLogic() {
     }, []);
 
     const getAJoke = () => {
-        fetch('https://api.chucknorris.io/jokes/random')
-            .then(res => res.json())
-            .then(res => {
-                console.log(res);
-                setData(res);
-                console.log(res.value);
-                setJoke(res.value);
-                // console.log(jokesList);
-                setLoading(false);
-            })
-            .catch(e => console.log(e));
+        if(selected === "option1") {
+                fetch('https://api.chucknorris.io/jokes/random')
+                    .then(res => res.json())
+                    .then(res => {
+                        setData(res);
+                        setLoading(false);
+                    })
+                    .catch(e => console.log(e));
+            }
+        else if(selected === "option2") {
+            fetch(`https://api.chucknorris.io/jokes/random?category=${active}`)
+                .then(res => res.json())
+                .then(res => {
+                    setData(res);
+                    setLoading(false);
+                })
+                .catch(e => console.log(e));
+        }
+        else if(selected === "option3") {
+            fetch(`https://api.chucknorris.io/jokes/search?query=${query}`)
+                .then(res => res.json())
+                .then(res => {
+                    setJokes(res.result);
+                    setLoading(false);
+                })
+                .catch(e => console.log(e));
+        }
     };
 
     const handleOptionChange = e => {
        setSelected(e.target.value);
     };
-    /*Trying to implement array of jokes*/
-
-    // const addedJokeToList = () => {
-    //     for(let i = 0; i < jokesList.length; i++) {
-    //         if(jokesList.indexOf(joke)) {
-    //             console.log('Joke already in the list');
-    //         } else {
-    //             setJokesList([joke, ...jokesList]);
-    //         }
-    //     }
-    // };
 
     return (
         <div className="joke_logic">
+            {/*Radio Buttons*/}
             <JokeOptions
                 handleOptionChange={handleOptionChange}
                 selected={selected}
+                active={active}
+                setActive={setActive}
                 categories={categories}
                 getAJoke={getAJoke}
+                setQuery={setQuery}
             />
+            {/*Get a Joke Button*/}
             <button className="btn" onClick={getAJoke}>Get a joke</button>
-            <JokeItself
+            {/*Jokes*/}
+            {selected === 'option1' || selected === 'option2' ?
+                <JokeItself
                 value={data.value}
                 id={data.id}
                 category={data.categories}
-            />
+                />
+                :
+                jokes.map(data => {
+                    return (
+                    <JokeItself value={data.value}
+                    id={data.id}
+                    category={data.categories}
+                    key={data.id}
+                    />
+                    )
+                })
+            }
         </div>
     );
 }
