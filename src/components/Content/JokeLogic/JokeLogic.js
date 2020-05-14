@@ -2,10 +2,12 @@ import React, {useEffect, useState} from "react";
 import "./JokeLogic.css";
 import JokeItself from "./JokeItself/JokeItself";
 import JokeOptions from "./JokeOptions/JokeOptions";
+import JokeButton from "./JokeButton/JokeButton";
 
 function JokeLogic() {
     const [data, setData] = useState({});
     const [jokes, setJokes] = useState([]);
+    // const [favJokes, setFavJokes] = useState([]);
     const [loading, setLoading] = useState(false);
     const [selected, setSelected] = useState("option1");
     const [categories, setCategories] = useState([]);
@@ -15,42 +17,34 @@ function JokeLogic() {
     useEffect(() => {
         setLoading(true);
         getAJoke();
-        fetch('https://api.chucknorris.io/jokes/categories')
-            .then(res => res.json())
-            .then(res => {
-                setCategories(res);
-                setLoading(false);
-            })
-            .catch(e => console.log(e));
-    }, []);
+        const fetchCategories = async () => {
+            const response = await fetch('https://api.chucknorris.io/jokes/categories');
+            const data = await response.json();
+            setCategories(data);
+            setLoading(false);
+        };
+        fetchCategories();
+    }, [setLoading]);
 
-    const getAJoke = () => {
+    const getAJoke = async () => {
         if(selected === "option1") {
-                fetch('https://api.chucknorris.io/jokes/random')
-                    .then(res => res.json())
-                    .then(res => {
-                        setData(res);
-                        setLoading(false);
-                    })
-                    .catch(e => console.log(e));
-            }
+            const response = await fetch('https://api.chucknorris.io/jokes/random');
+            const data = await response.json();
+            console.log(data);
+            setData(data);
+            setLoading(false);
+        }
         else if(selected === "option2") {
-            fetch(`https://api.chucknorris.io/jokes/random?category=${active}`)
-                .then(res => res.json())
-                .then(res => {
-                    setData(res);
-                    setLoading(false);
-                })
-                .catch(e => console.log(e));
+            const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${active}`);
+            const data = await response.json();
+            setData(data);
+            setLoading(false);
         }
         else if(selected === "option3") {
-            fetch(`https://api.chucknorris.io/jokes/search?query=${query}`)
-                .then(res => res.json())
-                .then(res => {
-                    setJokes(res.result);
-                    setLoading(false);
-                })
-                .catch(e => console.log(e));
+            const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${query}`);
+            const data = await response.json();
+            setJokes(data.result);
+            setLoading(false);
         }
     };
 
@@ -67,25 +61,29 @@ function JokeLogic() {
                 active={active}
                 setActive={setActive}
                 categories={categories}
-                getAJoke={getAJoke}
                 setQuery={setQuery}
+                getAJoke={getAJoke}
             />
             {/*Get a Joke Button*/}
-            <button className="btn" onClick={getAJoke}>Get a joke</button>
+            <JokeButton selected={selected} getAJoke={getAJoke}/>
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
-                <JokeItself
-                value={data.value}
-                id={data.id}
-                category={data.categories}
-                />
+                  <JokeItself
+                      value={data.value}
+                      id={data.id}
+                      category={data.categories}
+                      updated_at={data.updated_at}
+                      key={data.id}
+                  />
                 :
-                jokes.map(data => {
+                jokes.map(joke => {
                     return (
-                    <JokeItself value={data.value}
-                    id={data.id}
-                    category={data.categories}
-                    key={data.id}
+                    <JokeItself
+                    value={joke.value}
+                    id={joke.id}
+                    category={joke.categories}
+                    updated_at={data.updated_at}
+                    key={joke.id}
                     />
                     )
                 })
