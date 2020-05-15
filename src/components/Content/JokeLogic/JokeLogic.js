@@ -7,7 +7,7 @@ import JokeButton from "./JokeButton/JokeButton";
 function JokeLogic() {
     const [data, setData] = useState({});
     const [jokes, setJokes] = useState([]);
-    // const [favJokes, setFavJokes] = useState([]);
+    const [favJokes, setFavJokes] = useState([]);
     const [loading, setLoading] = useState(false);
     const [selected, setSelected] = useState("option1");
     const [categories, setCategories] = useState([]);
@@ -24,7 +24,7 @@ function JokeLogic() {
             setLoading(false);
         };
         fetchCategories();
-    }, [setLoading]);
+    }, []);
 
     const getAJoke = async () => {
         if(selected === "option1") {
@@ -52,6 +52,16 @@ function JokeLogic() {
        setSelected(e.target.value);
     };
 
+    const likeJoke = (id) => {
+      if (favJokes.find((joke) => joke.id === id)) return;
+        let favJoke;
+      if (data.id === id) {
+          favJoke = data;
+      }
+      setFavJokes([favJoke, ...favJokes]);
+
+    };
+
     return (
         <div className="joke_logic">
             {/*Radio Buttons*/}
@@ -65,7 +75,7 @@ function JokeLogic() {
                 getAJoke={getAJoke}
             />
             {/*Get a Joke Button*/}
-            <JokeButton selected={selected} getAJoke={getAJoke}/>
+            <JokeButton getAJoke={getAJoke}/>
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
                   <JokeItself
@@ -73,6 +83,7 @@ function JokeLogic() {
                       id={data.id}
                       category={data.categories}
                       updated_at={data.updated_at}
+                      likeJoke={likeJoke}
                       key={data.id}
                   />
                 :
@@ -83,6 +94,7 @@ function JokeLogic() {
                     id={joke.id}
                     category={joke.categories}
                     updated_at={data.updated_at}
+                    likeJoke={likeJoke}
                     key={joke.id}
                     />
                     )

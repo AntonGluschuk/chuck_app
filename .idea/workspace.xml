@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeButton/JokeButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/Vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/Vector.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/comment.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images/heart.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +109,8 @@
       <workItem from="1589197454500" duration="19418000" />
       <workItem from="1589302405125" duration="1881000" />
       <workItem from="1589392974417" duration="599000" />
-      <workItem from="1589451671529" duration="24592000" />
+      <workItem from="1589451671529" duration="25605000" />
+      <workItem from="1589555166134" duration="9157000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -193,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589218825071</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="21:24 14/05/20 finished content, working on sidebar">
+      <created>1589480735990</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589480735990</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +221,8 @@
     <MESSAGE value="20:14 08/05/20 make JokeOptions component, change project structure" />
     <MESSAGE value="21:17 09/05/20 fix render by clicking button Get a Joke" />
     <MESSAGE value="20:38 11/05/20 implement FromCategories/Search, clear bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:38 11/05/20 implement FromCategories/Search, clear bugs" />
+    <MESSAGE value="21:24 14/05/20 finished content, start sidebar" />
+    <MESSAGE value="21:24 14/05/20 finished content, working on sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="21:24 14/05/20 finished content, working on sidebar" />
   </component>
 </project>

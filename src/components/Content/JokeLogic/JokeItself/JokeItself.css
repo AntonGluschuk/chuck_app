@@ -72,6 +72,10 @@
     color: #333333;
 }
 
+.joke_category:empty {
+    display: none;
+}
+
 /*Favourite icon*/
 
 .favorite_joke {
