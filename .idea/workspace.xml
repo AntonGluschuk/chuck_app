@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/JokeContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/images/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/images/external-link.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +113,7 @@
       <workItem from="1589555166134" duration="10447000" />
       <workItem from="1589622521747" duration="326000" />
       <workItem from="1589623049649" duration="10399000" />
-      <workItem from="1589638392586" duration="1909000" />
+      <workItem from="1589638392586" duration="2150000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -213,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589566545773</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="20:29 16/05/20 implement context API, finished favourites">
+      <created>1589650195686</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589650195686</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +241,7 @@
     <MESSAGE value="21:24 14/05/20 finished content, start sidebar" />
     <MESSAGE value="21:24 14/05/20 finished content, working on sidebar" />
     <MESSAGE value="21:13 15/05/20 refactor joke id link and category render" />
-    <option name="LAST_COMMIT_MESSAGE" value="21:13 15/05/20 refactor joke id link and category render" />
+    <MESSAGE value="20:29 16/05/20 implement context API, finished favourites" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:29 16/05/20 implement context API, finished favourites" />
   </component>
 </project>

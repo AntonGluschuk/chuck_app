@@ -51,7 +51,6 @@ function JokeLogic() {
         else if(selected === "option3") {
             const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${query}`);
             const data = await response.json();
-            console.log(data.result);
             setJokes(data.result);
             setLoading(false);
         }
