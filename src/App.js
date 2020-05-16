@@ -2,13 +2,17 @@ import React from 'react';
 import './App.css';
 import Content from './components/Content/Content';
 import Sidebar from "./components/Sidebar/Sidebar";
+import {JokeProvider} from "./components/JokeContext";
 
 export function App() {
   return (
-      <section className="main_content">
-        <Content/>
-        <Sidebar/>
-      </section>
+      <JokeProvider>
+          <section className="main_content">
+              <Content/>
+              <Sidebar/>
+          </section>
+      </JokeProvider>
+
   )
 }
 

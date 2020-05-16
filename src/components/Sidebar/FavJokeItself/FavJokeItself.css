@@ -1,26 +1,30 @@
 /*rectangle with a joke*/
 
-.rectangle {
+.fav_rectangle {
     display: block;
-    padding: 80px;
-    margin: 20px 0;
+    padding: 30px;
+    margin: 5px 0;
     background: #F8F8F8;
     border-radius: 20px;
 }
 
 /*joke*/
 
-.joke {
+.fav_joke {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background: #F8F8F8;
+    background: #FFFFFF;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /*Joke ID*/
 
-.id {
+.fav_id {
     align-self: flex-start;
     margin: 0;
     color: #ABABAB;
@@ -28,13 +32,13 @@
 
 /*Joke link*/
 
-#link {
+#fav_link {
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
-    background: url('./images/external-link.png') no-repeat 100% 0;
+    background: url('images/external-link.png') no-repeat 100% 0;
     background-size: 14px 14px;
     padding-right: 19px;
     color: #8EA7FF;
@@ -42,7 +46,7 @@
 
 /*Joke value*/
 
-.joke_value {
+.fav_joke_value {
     align-self: flex-start;
     text-align: left;
     font-family: inherit;
@@ -54,11 +58,11 @@
 
 /*Joke category*/
 
-.joke_category {
+.fav_joke_category {
     text-align: center;
     align-content: center;
     align-self: flex-end;
-    background: #FFFFFF;
+    background: #F8F8F8;
     border-radius: 6px;
     padding: 5px;
     font-family: inherit;
@@ -71,38 +75,38 @@
     color: #333333;
 }
 
-.joke_category:empty {
+.fav_joke_category:empty {
     display: none;
 }
 
 /*Favourite icon*/
 
-.favorite_joke {
+.fav_favorite_joke {
     align-self: flex-end;
     top: 20px;
     right: 20px;
     border: none;
     cursor: pointer;
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
 }
 
-.favorite_icon {
+.fav_favorite_icon {
     color: #FF6767;
 }
 
 /*Comment icon*/
 
-.comment_circle {
+.fav_comment_circle {
     position: relative;
     overflow: hidden;
     width: 40px;
     height: 40px;
     top: 120px;
     border-radius: 50%;
-    background: white;
+    background: #F8F8F8;
 }
 
-.comment_icon {
+.fav_comment_icon {
     display: inline;
     width: auto;
     height: 22px;
@@ -113,7 +117,7 @@
 
 /*Last update time*/
 
-.last_update {
+.fav_last_update {
     align-self: flex-start;
     font-family: inherit;
     font-style: normal;
