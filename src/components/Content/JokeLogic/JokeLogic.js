@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import "./JokeLogic.css";
 import JokeItself from "./JokeItself/JokeItself";
 import JokeOptions from "./JokeOptions/JokeOptions";
@@ -14,13 +14,15 @@ function JokeLogic() {
         favJokes,
         setFavJokes,
         selected,
-        setSelected
+        setSelected,
+        setLoading,
+        categories,
+        setCategories,
+        active,
+        setActive,
+        query,
+        setQuery
     } = useContext(JokeContext);
-
-    const [loading, setLoading] = useState(false);
-    const [categories, setCategories] = useState([]);
-    const [active, setActive] = useState(categories[0]);
-    const [query, setQuery] = useState('punch');
 
     useEffect(() => {
         setLoading(true);
@@ -69,7 +71,8 @@ function JokeLogic() {
                   favJoke = joke;
               }
           })
-      } else if (data.id === id ) {
+      }
+      if (data.id === id ) {
           favJoke = data;
       }
       setFavJokes([favJoke, ...favJokes]);
@@ -84,11 +87,12 @@ function JokeLogic() {
                 active={active}
                 setActive={setActive}
                 categories={categories}
+                query={query}
                 setQuery={setQuery}
                 getAJoke={getAJoke}
             />
             {/*Get a Joke Button*/}
-            <JokeButton getAJoke={getAJoke}/>
+            <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
                   <JokeItself
