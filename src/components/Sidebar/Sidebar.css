@@ -1,7 +1,7 @@
 /*SideBar*/
 
 .sidebar {
-    grid-area: s;
+    grid-area: sidebar;
     font-family: inherit;
     background: #F8F8F8;
     display: flex;

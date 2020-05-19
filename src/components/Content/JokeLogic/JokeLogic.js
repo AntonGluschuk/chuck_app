@@ -79,20 +79,30 @@ function JokeLogic() {
     };
 
     return (
+
         <div className="joke_logic">
-            {/*Radio Buttons*/}
-            <JokeOptions
-                handleOptionChange={handleOptionChange}
-                selected={selected}
-                active={active}
-                setActive={setActive}
-                categories={categories}
-                query={query}
-                setQuery={setQuery}
-                getAJoke={getAJoke}
-            />
-            {/*Get a Joke Button*/}
-            <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
+            <div className="logo">
+                <div className="logo_title">MSI 2020</div>
+            </div>
+            <div className="intro">
+                <div className="intro_title">Hey!</div>
+                <div className="intro_subtitle">Let's try to find a joke for you:</div>
+
+                {/*Radio Buttons*/}
+                <JokeOptions
+                    handleOptionChange={handleOptionChange}
+                    selected={selected}
+                    active={active}
+                    setActive={setActive}
+                    categories={categories}
+                    query={query}
+                    setQuery={setQuery}
+                    getAJoke={getAJoke}
+                />
+
+                {/*Get a Joke Button*/}
+                <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
+            </div>
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
                   <JokeItself

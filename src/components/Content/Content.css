@@ -1,7 +1,6 @@
-/*Main*/
+/*Content*/
 
 .content {
-    grid-area: c;
+    grid-area: main;
     font-family: inherit;
 }
-

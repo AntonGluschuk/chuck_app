@@ -1,27 +1,84 @@
-/* Tag <form> with radio buttons */
+@import "../../../../index.css";
+
+/* RadioButton Container */
 
 .select_option {
-    grid-area: sc;
+    display: flex;
+    flex-direction: column;
 }
 
-/*Radio buttons*/ /*Probably must be replaced in style.css of every radio button */
+/*Radio buttons takes from here https://codepen.io/hansmaad/pen/zBdzxp
+ and here https://dev.to/lkopacz/create-custom-keyboard-accessible-radio-buttons-22eh
+*/
 
-.select_option > input {
-    margin: 10px 0;
+.form-check-input {
+    display: none;
+}
+
+.form-check-input:checked + label:before {
+    border-color: #333333;
+}
+
+.form-check-input:checked + label:after {
+    transform: scale(1);
+}
+
+.radio_label {
+    display: inline-block;
+    /*min-height: 20px;*/
+    position: relative;
+    padding: 0 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    /*vertical-align: bottom;*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #333333;
+}
+
+.radio_label:before, :after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    transition: all .3s ease;
+    transition-property: transform, border-color;
+}
+
+.radio_label:before {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ABABAB;
+}
+
+.radio_label:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    background: #333333;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 /*Radio button = Search*/
 
 .search {
     display: grid;
-    min-height: 5vh;
-    padding: 5px 2px;
+    min-height: 15vh;
+    margin: 5px 0;
 }
 
 /*Search input*/
 
-.search > input {
-    font-family: inherit;
+.search_input {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

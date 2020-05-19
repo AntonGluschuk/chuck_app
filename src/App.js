@@ -4,7 +4,7 @@ import Content from './components/Content/Content';
 import Sidebar from "./components/Sidebar/Sidebar";
 import {JokeProvider} from "./components/JokeContext";
 
-export function App() {
+function App() {
   return (
       <JokeProvider>
           <section className="main_content">

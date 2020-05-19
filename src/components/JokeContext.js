@@ -1,6 +1,6 @@
 import React, {createContext, useState, useEffect} from "react";
 
-export const JokeContext = createContext({});
+export const JokeContext = createContext();
 
 export const JokeProvider = (props) => {
     const [data, setData] = useState({});

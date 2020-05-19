@@ -28,6 +28,7 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
                 {(selected === "option3") ?
                     <form className="search">
                         <input
+                            className="search_input"
                             type="text"
                             placeholder="Free text search..."
                             value={query}
