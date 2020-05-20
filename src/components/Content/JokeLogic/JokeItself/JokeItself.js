@@ -8,19 +8,23 @@ import comment_icon from './images/comment.png'
 function JokeItself({ id, value, category, updated_at, likeJoke }) {
     return (
         <div className="rectangle">
-            <div className="comment_circle">
-                <img src={comment_icon} className="comment_icon" alt="comment_icon"/>
-            </div>
+            <button className="favorite_joke" onClick={() => likeJoke(id)}>
+                <FontAwesomeIcon className="favorite_icon" icon={ faHeart } size="2x" />
+            </button>
             <div className="joke">
-                <button className="favorite_joke" onClick={() => likeJoke(id)}>
-                    <FontAwesomeIcon className="favorite_icon" icon={ faHeart } size="2x" />
-                </button>
-                <div className="id">
-                    ID: <a id="link" href={`https://api.chucknorris.io/jokes/${id}`}>{id}</a>
+                <div className="comment_circle">
+                    <img src={comment_icon} className="comment_icon" alt="comment_icon"/>
                 </div>
-                <div className="joke_value">{value}</div>
-                <div className="last_update">Last update: <Moment fromNow>{updated_at}</Moment></div>
-                <div className="joke_category">{category}</div>
+                <div className="content">
+                    <div className="id">
+                        ID: <a id="link" href={`https://api.chucknorris.io/jokes/${id}`}>{id}</a>
+                    </div>
+                    <div className="joke_value">{value}</div>
+                    <div className="update_category">
+                        <div className="last_update">Last update: <Moment fromNow>{updated_at}</Moment></div>
+                        <div className="joke_category">{category}</div>
+                    </div>
+                </div>
             </div>
         </div>
     );

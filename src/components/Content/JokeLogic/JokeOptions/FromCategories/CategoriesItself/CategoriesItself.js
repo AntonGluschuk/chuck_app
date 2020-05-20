@@ -17,7 +17,7 @@ const Button = styled.button`
   border: 2px solid #F8F8F8;
   border-radius: 6px;
   box-sizing: border-box;
-  margin: 10px 0px;
+  margin: 8px 8px;
   cursor: pointer;
 `;
 
@@ -25,7 +25,7 @@ const ButtonToggle = styled(Button)`
   opacity: 0.6;
   ${({ active }) =>
     active &&
-    `    
+    `
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;

@@ -79,7 +79,6 @@ function JokeLogic() {
     };
 
     return (
-
         <div className="joke_logic">
             <div className="logo">
                 <div className="logo_title">MSI 2020</div>
@@ -103,6 +102,7 @@ function JokeLogic() {
                 {/*Get a Joke Button*/}
                 <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
             </div>
+
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
                   <JokeItself

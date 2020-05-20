@@ -25,12 +25,10 @@
 
 .radio_label {
     display: inline-block;
-    /*min-height: 20px;*/
     position: relative;
     padding: 0 30px;
     margin-bottom: 15px;
     cursor: pointer;
-    /*vertical-align: bottom;*/
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -71,7 +69,7 @@
 
 .search {
     display: grid;
-    min-height: 15vh;
+    min-height: 6vh;
     margin: 5px 0;
 }
 
@@ -83,9 +81,18 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #ABABAB;
+    color: #333333;
     padding: 0 5px;
     border: 2px solid #333333;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.search_input::placeholder {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABABAB;
 }

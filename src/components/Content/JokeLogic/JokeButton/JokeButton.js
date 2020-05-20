@@ -1,4 +1,5 @@
 import React from "react";
+import "./JokeButton.css"
 
 function JokeButton({ getAJoke, query, selected }) {
     return (

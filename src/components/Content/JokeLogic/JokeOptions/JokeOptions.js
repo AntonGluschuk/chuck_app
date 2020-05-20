@@ -16,7 +16,7 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
                 {/* Categories List*/}
                 {(selected === "option2") ?
                     <CategoriesItself selected={selected}
-                                      categories={categories.slice(0, 4)}
+                                      categories={categories}
                                       active={active}
                                       setActive={setActive}
                     />

@@ -1,38 +1,80 @@
-/*rectangle with a joke*/
+/*Rectangle with a joke*/
 
 .rectangle {
-    display: block;
-    padding: 80px;
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 20px;
     background: #F8F8F8;
     border-radius: 20px;
 }
 
-/*joke*/
+/*Favourite icon*/
+
+.favorite_joke {
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
+    background-color: #F8F8F8;
+}
+
+.favorite_icon {
+    color: #FF6767;
+}
+
+/*Joke*/
 
 .joke {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
+    margin-top: 10px;
     background: #F8F8F8;
+    border-radius: 20px;
+}
+
+/*Comment icon*/
+
+.comment_circle {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 40px;
+    overflow: hidden;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.comment_icon {
+    width: auto;
+    height: 22px;
+    margin-top: 25%;
+    color: #ABABAB;
+}
+
+/*Joke content*/
+
+.content {
+    width: 100%;
 }
 
 /*Joke ID*/
 
 .id {
-    align-self: flex-start;
-    margin: 0;
     color: #ABABAB;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
 }
 
 /*Joke link*/
 
 #link {
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 14px;
     background: url('./images/external-link.png') no-repeat 100% 0;
     background-size: 14px 14px;
@@ -43,27 +85,43 @@
 /*Joke value*/
 
 .joke_value {
-    align-self: flex-start;
-    text-align: left;
-    font-family: inherit;
+    max-width: 540px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 10px;
     font-size: 18px;
     line-height: 26px;
+}
+
+/*Last update and Category*/
+
+.update_category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
 }
 
 /*Joke category*/
 
 .joke_category {
-    text-align: center;
-    align-content: center;
-    align-self: flex-end;
     background: #FFFFFF;
     border-radius: 6px;
-    padding: 5px;
-    font-family: inherit;
+    padding: 5px 20px;
+    margin-right: -2px;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -73,53 +131,4 @@
 
 .joke_category:empty {
     display: none;
-}
-
-/*Favourite icon*/
-
-.favorite_joke {
-    align-self: flex-end;
-    top: 20px;
-    right: 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #F8F8F8;
-}
-
-.favorite_icon {
-    color: #FF6767;
-}
-
-/*Comment icon*/
-
-.comment_circle {
-    position: relative;
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
-    top: 120px;
-    border-radius: 50%;
-    background: white;
-}
-
-.comment_icon {
-    display: inline;
-    width: auto;
-    height: 22px;
-    margin-left: 25%;
-    margin-top: 25%;
-    color: #ABABAB;
-}
-
-/*Last update time*/
-
-.last_update {
-    align-self: flex-start;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: normal;
-    margin: 15px 0;
-    font-size: 18px;
-    line-height: 14px;
-    color: #ABABAB;
 }
