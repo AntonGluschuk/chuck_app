@@ -3,7 +3,7 @@ import Moment from 'react-moment';
 import "./JokeItself.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
-import comment_icon from './images/comment.png'
+import comment_icon from '../../../images/comment.png'
 
 function JokeItself({ id, value, category, updated_at, likeJoke }) {
     return (

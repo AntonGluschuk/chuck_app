@@ -1,44 +1,85 @@
-/*rectangle with a joke*/
+/*Rectangle with a joke*/
 
 .fav_rectangle {
-    display: block;
-    padding: 30px;
-    margin: 5px 0;
-    background: #F8F8F8;
-    border-radius: 20px;
-}
-
-/*joke*/
-
-.fav_joke {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background: #FFFFFF;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
     border: 1px solid #F8F8F8;
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+}
+
+/*Favourite icon*/
+
+.fav_favorite_joke {
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.fav_favorite_icon {
+    color: #FF6767;
+}
+
+/*Joke*/
+
+.fav_joke {
+    display: flex;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+/*Comment icon*/
+
+.fav_comment_circle {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 40px;
+    overflow: hidden;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: #F8F8F8;
+}
+
+.fav_comment_icon {
+    width: auto;
+    height: 22px;
+    margin-top: 25%;
+    color: #ABABAB;
+}
+
+/*Joke content*/
+
+.fav_content {
+    width: 100%;
 }
 
 /*Joke ID*/
 
 .fav_id {
-    align-self: flex-start;
-    margin: 0;
     color: #ABABAB;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
 }
 
 /*Joke link*/
 
 #fav_link {
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 14px;
-    background: url('images/external-link.png') no-repeat 100% 0;
+    background: url('./images/external-link.png') no-repeat 100% 0;
     background-size: 14px 14px;
     padding-right: 19px;
     color: #8EA7FF;
@@ -47,27 +88,41 @@
 /*Joke value*/
 
 .fav_joke_value {
-    align-self: flex-start;
-    text-align: left;
-    font-family: inherit;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*Last update and Category*/
+
+.fav_update_category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: #ABABAB;
 }
 
 /*Joke category*/
 
 .fav_joke_category {
-    text-align: center;
-    align-content: center;
-    align-self: flex-end;
     background: #F8F8F8;
-    border-radius: 6px;
-    padding: 5px;
-    font-family: inherit;
+    padding: 5px 20px;
+    margin-right: -2px;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -77,53 +132,4 @@
 
 .fav_joke_category:empty {
     display: none;
-}
-
-/*Favourite icon*/
-
-.fav_favorite_joke {
-    align-self: flex-end;
-    top: 20px;
-    right: 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #FFFFFF;
-}
-
-.fav_favorite_icon {
-    color: #FF6767;
-}
-
-/*Comment icon*/
-
-.fav_comment_circle {
-    position: relative;
-    overflow: hidden;
-    width: 40px;
-    height: 40px;
-    top: 120px;
-    border-radius: 50%;
-    background: #F8F8F8;
-}
-
-.fav_comment_icon {
-    display: inline;
-    width: auto;
-    height: 22px;
-    margin-left: 25%;
-    margin-top: 25%;
-    color: #ABABAB;
-}
-
-/*Last update time*/
-
-.fav_last_update {
-    align-self: flex-start;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: normal;
-    margin: 15px 0;
-    font-size: 18px;
-    line-height: 14px;
-    color: #ABABAB;
 }

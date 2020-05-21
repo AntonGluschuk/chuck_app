@@ -40,7 +40,6 @@ function JokeLogic() {
         if(selected === "option1") {
             const response = await fetch('https://api.chucknorris.io/jokes/random');
             const data = await response.json();
-            console.log(data);
             setData(data);
             setLoading(false);
         }
@@ -82,6 +81,13 @@ function JokeLogic() {
         <div className="joke_logic">
             <div className="logo">
                 <div className="logo_title">MSI 2020</div>
+                <div className="side_fav_menu">
+                    <div className="side_fav_icon">
+                        <span className="side first_line"></span>
+                        <span className="side second_line"></span>
+                    </div>
+                    <div className="side_fav_title">Favourite</div>
+                </div>
             </div>
             <div className="intro">
                 <div className="intro_title">Hey!</div>
@@ -105,14 +111,14 @@ function JokeLogic() {
 
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
-                  <JokeItself
+                    <JokeItself
                       value={data.value}
                       id={data.id}
                       category={data.categories}
                       updated_at={data.updated_at}
                       likeJoke={likeJoke}
                       key={data.id}
-                  />
+                    />
                 :
                 jokes.map(joke => {
                     return (
