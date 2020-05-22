@@ -4,6 +4,7 @@ import JokeItself from "./JokeItself/JokeItself";
 import JokeOptions from "./JokeOptions/JokeOptions";
 import JokeButton from "./JokeButton/JokeButton";
 import { JokeContext } from "../../JokeContext";
+import SideButton from "../../SideButton/SideButton";
 
 function JokeLogic() {
     const {
@@ -81,13 +82,7 @@ function JokeLogic() {
         <div className="joke_logic">
             <div className="logo">
                 <div className="logo_title">MSI 2020</div>
-                <div className="side_fav_menu">
-                    <div className="side_fav_icon">
-                        <span className="side first_line"></span>
-                        <span className="side second_line"></span>
-                    </div>
-                    <div className="side_fav_title">Favourite</div>
-                </div>
+                <SideButton/>
             </div>
             <div className="intro">
                 <div className="intro_title">Hey!</div>

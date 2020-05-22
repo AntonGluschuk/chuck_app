@@ -13,6 +13,16 @@
 
 @media (max-width: 960px) {
   .main_content {
-    display: flex;
+    display: block;
+    position: relative;
+  }
+  .main_content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
   }
 }

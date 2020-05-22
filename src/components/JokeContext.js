@@ -12,6 +12,7 @@ export const JokeProvider = (props) => {
     const [categories, setCategories] = useState([]);
     const [active, setActive] = useState("animal");
     const [query, setQuery] = useState("");
+    const [visibleSide, setVisibleSide] = useState(false);
 
     const providerValue = {
         data,
@@ -29,7 +30,9 @@ export const JokeProvider = (props) => {
         active,
         setActive,
         query,
-        setQuery
+        setQuery,
+        visibleSide,
+        setVisibleSide
     };
 
     useEffect(() => {

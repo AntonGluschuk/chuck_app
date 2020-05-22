@@ -1,0 +1,57 @@
+/*Menu for tablet and mobile*/
+
+.side_fav_menu {
+    display: none;
+}
+
+.side_fav_title {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .side_fav_menu {
+        display: flex;
+        width: 122px;
+        height: 28px;
+        top: 40px;
+        right: 40px;
+        padding: 0;
+        margin: 0;
+        z-index: 100;
+    }
+
+    .side_fav_btn {
+        display: flex;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fav_btn_icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .side_fav_title {
+        display: inline;
+        margin-left: 10px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ABABAB;
+    }
+
+    /*.sidebar_active {*/
+    /*    display: flex;*/
+    /*    width: 480px;*/
+    /*    flex-direction: column;*/
+    /*    padding: 40px;*/
+    /*    background: #F8F8F8;*/
+    /*    z-index: 200;*/
+    /*}*/
+}

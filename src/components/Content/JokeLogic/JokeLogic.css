@@ -1,8 +1,8 @@
 @import "../../../index.css";
 @import "../../Sidebar/Sidebar.css";
 
+/*Joke Logic*/
 
-/*Joke Logic container*/
 .joke_logic {
     display: grid;
     grid-template-areas:
@@ -64,59 +64,6 @@
     grid-area: logic;
 }
 
-/*Menu for tablet and mobile*/
-
-.side_fav_menu {
-    display: none;
-}
-
-.side_fav_title {
-    display: none;
-}
-
-.side_fav_icon {
-    cursor: pointer;
-    margin-right: 10px;
-    background: #333;
-    border-radius: 50%;
-    padding: 10px 7px;
-    width: 28px;
-    height: 28px;
-    position: relative;
-    box-sizing: border-box;
-}
-
-/*Menu Icon for tablet and mobile*/
-
-.side {
-    display: block;
-    width: 14px;
-    height: 2px;
-    background: white;
-    border-radius: 2px;
-    position: absolute;
-}
-
-.first_line {
-    top: 10px;
-}
-
-.second_line {
-    bottom: 10px;
-}
-
-.side_fav_menu:active .first_line {
-    top: 13px;
-    transition: 0.1s;
-    transform: rotate(45deg);
-}
-
-.side_fav_menu:active .second_line {
-    bottom: 13px;
-    transition: 0.1s;
-    transform: rotate(-45deg);
-}
-
 @media (max-width: 1240px) {
     .joke_logic {
         display: grid;
@@ -132,37 +79,18 @@
 }
 
 @media (max-width: 960px) {
-    .sidebar {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 3;
-    }
+    /*.joke_logic {*/
+    /*    display: block;*/
+    /*    position: relative;*/
+    /*    background: rgba(0, 0, 0, 0.3);*/
+    /*    z-index: 100;*/
+    /*}*/
 
-    .side_fav_menu {
-        display: flex;
-        z-index: 4;
-        top: 40px;
-    }
-
-    .side_fav_title {
-        display: block;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 28px;
-        color: #ABABAB;
-    }
-
-    .joke_logic {
-        display: block;
-        position: relative;
-    }
-    .sidebar_active {
-        display: block;
-        box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
-        min-height: 100vh;
-    }
+    /*.sidebar {*/
+    /*    display: none;*/
+    /*    position: absolute;*/
+    /*    z-index: 200;*/
+    /*    top: 0;*/
+    /*    right: 0;*/
+    /*}*/
 }

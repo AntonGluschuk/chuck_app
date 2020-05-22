@@ -7,13 +7,22 @@ function Sidebar() {
     const {
         favJokes,
         setFavJokes,
-        selected
+        selected,
+        // visibleSide
     } = useContext(JokeContext);
 
     const unlikeJoke = (id) => {
         const newLikedJokes = favJokes.filter((joke) => joke.id !== id);
         setFavJokes(newLikedJokes);
     };
+
+    /*Change className for aside*/
+    // let openSide;
+    // if(!visibleSide) {
+    //     openSide = "sidebar";
+    // } else {
+    //     openSide = "sidebar_active";
+    // }
 
     return (
         <aside className="sidebar">

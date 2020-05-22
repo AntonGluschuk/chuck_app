@@ -2,5 +2,5 @@
 
 .content {
     grid-area: main;
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
 }
