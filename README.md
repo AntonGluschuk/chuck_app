@@ -2,7 +2,7 @@
 
 #### This test-project was developed for 2020 Summer internship at [MacPaw](https://macpaw.com/careers/front-end-intern)
 
-#### Project using [Chuck Norris API](https://api.chucknorris.io/) 
+#### For getting jokes, project using [Chuck Norris API](https://api.chucknorris.io/)
 
 ### Implemented features:
 - Ability to get a random joke.
