@@ -1,6 +1,8 @@
-## Description 
+## Chuck Norris Joke App
 
 #### This test-project was developed for 2020 Summer internship at [MacPaw](https://macpaw.com/careers/front-end-intern)
+
+#### Project using [Chuck Norris API](https://api.chucknorris.io/) 
 
 ### Implemented features:
 - Ability to get a random joke.
