@@ -1,6 +1,6 @@
 ## Chuck Norris Joke App
 
-#### This test-project was developed for 2020 Summer internship at [MacPaw](https://macpaw.com/careers/front-end-intern)
+#### This test-project was developed for 2020 Summer internship at [MacPaw](https://macpaw.com/)
 
 #### For getting jokes, project using [Chuck Norris API](https://api.chucknorris.io/)
 

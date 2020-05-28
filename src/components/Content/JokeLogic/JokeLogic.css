@@ -79,18 +79,19 @@
 }
 
 @media (max-width: 960px) {
-    /*.joke_logic {*/
+    .joke_logic {
+        display: block;
+        position: relative;
+        /*overflow-y: scroll;*/
+        /*z-index: 90;*/
+        /*background: rgba(0,0,0,.3);*/
+    }
+
+    /*.joke_logic_deactivate {*/
     /*    display: block;*/
     /*    position: relative;*/
-    /*    background: rgba(0, 0, 0, 0.3);*/
-    /*    z-index: 100;*/
-    /*}*/
-
-    /*.sidebar {*/
-    /*    display: none;*/
-    /*    position: absolute;*/
-    /*    z-index: 200;*/
-    /*    top: 0;*/
-    /*    right: 0;*/
+    /*    background: rgba(0,0,0,.35);*/
+    /*    z-index: 90;*/
+    /*    overflow: hidden;*/
     /*}*/
 }

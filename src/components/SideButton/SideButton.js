@@ -11,7 +11,11 @@ function SideButton() {
 
 
     const openSideBar = () => {
-        setVisibleSide(!visibleSide);
+        if(!visibleSide) {
+            setVisibleSide(true);
+        } else {
+            setVisibleSide(false);
+        }
     };
 
     return (

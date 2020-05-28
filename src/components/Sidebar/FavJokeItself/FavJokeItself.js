@@ -1,11 +1,15 @@
 import React from "react";
-import Moment from 'react-moment';
 import "./FavJokeItself.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import comment_icon from '../../images/comment.png'
 
 function FavJokeItself({ id, value, category, updated_at, unlikeJoke }) {
+
+    const calculateHours = (date) => {
+        return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
+    };
+
     return (
         <div className="fav_rectangle">
             <button className="fav_favorite_joke" onClick={() => unlikeJoke(id)}>
@@ -21,7 +25,7 @@ function FavJokeItself({ id, value, category, updated_at, unlikeJoke }) {
                     </div>
                     <div className="fav_joke_value">{value}</div>
                     <div className="fav_update_category">
-                        <div className="fav_last_update">Last update: <Moment fromNow>{updated_at}</Moment></div>
+                        <div className="fav_last_update">Last update: {calculateHours(updated_at)} hours ago</div>
                         <div className="fav_joke_category">{category}</div>
                     </div>
                 </div>

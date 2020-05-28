@@ -4,3 +4,19 @@
     grid-area: main;
     font-family: "Roboto", sans-serif;
 }
+
+@media (max-width: 960px) {
+    .content {
+        display: block;
+        position: relative;
+    }
+
+    .deactivate_content {
+        display: block;
+        position: relative;
+        background: rgba(0,0,0,.3);
+        z-index: 90;
+        overflow: hidden;
+        pointer-events: none;
+    }
+}

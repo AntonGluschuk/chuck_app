@@ -2,13 +2,14 @@ import React, { useContext } from "react";
 import "./Sidebar.css";
 import { JokeContext } from "../JokeContext";
 import FavJokeItself from "./FavJokeItself/FavJokeItself";
+import SideButton from "../SideButton/SideButton";
 
 function Sidebar() {
     const {
         favJokes,
         setFavJokes,
         selected,
-        // visibleSide
+        visibleSide
     } = useContext(JokeContext);
 
     const unlikeJoke = (id) => {
@@ -17,16 +18,16 @@ function Sidebar() {
     };
 
     /*Change className for aside*/
-    // let openSide;
-    // if(!visibleSide) {
-    //     openSide = "sidebar";
-    // } else {
-    //     openSide = "sidebar_active";
-    // }
+    let openSide;
+    if(!visibleSide) {
+        openSide = "sidebar";
+    } else {
+        openSide = "sidebar_active";
+    }
 
     return (
-        <aside className="sidebar">
-            <div className="fav_title">Favourite</div>
+        <aside className={openSide}>
+            {visibleSide ? <SideButton/> : <div className="fav_title">Favourite</div>}
             <div className="favourite_jokes">
                 {selected === 'option1' || selected === 'option2' ?
                     favJokes.map(joke => {
