@@ -5,7 +5,7 @@ import CategoriesItself from "./FromCategories/CategoriesItself/CategoriesItself
 import Search from "./Search/Search";
 import "./JokeOptions.css";
 
-function JokeOptions({ selected, handleOptionChange, categories, active, setActive, query, setQuery }) {
+function JokeOptions({ selected, handleOptionChange, categories, active, setActive, query, setQuery, getAJoke }) {
 
     return (
         <div className="select_option">
@@ -33,6 +33,14 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
                             placeholder="Free text search..."
                             value={query}
                             onChange={e => setQuery(e.target.value)}
+                            onKeyPress={(e) => {
+                                if (e.key === "Enter") {
+                                    e.preventDefault();
+                                    if (query.length >= 3) {
+                                        getAJoke();
+                                    }
+                                }
+                            }}
                         />
                     </form>
                     :

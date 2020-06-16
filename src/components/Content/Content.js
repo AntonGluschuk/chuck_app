@@ -4,20 +4,21 @@ import "./Content.css";
 import {JokeContext} from "../JokeContext";
 
 
+
 function Content() {
     const {
         visibleSide
     } = useContext(JokeContext);
 
-    let shadowMain;
+    let closeContent;
     if(!visibleSide) {
-        shadowMain = "content";
+        closeContent = "";
     } else {
-        shadowMain = "deactivate_content";
+        closeContent = "content_deactivate";
     }
 
     return (
-        <div className={shadowMain}>
+        <div className={`content ${closeContent}`}>
             <JokeLogic />
         </div>
     )

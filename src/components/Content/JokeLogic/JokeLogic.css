@@ -1,19 +1,6 @@
 @import "../../../index.css";
 @import "../../Sidebar/Sidebar.css";
 
-/*Joke Logic*/
-
-.joke_logic {
-    display: grid;
-    grid-template-areas:
-            "logo"
-            "intro"
-            "logic";
-    grid-template-rows: max-content 1fr max-content;
-    grid-template-columns: 1fr;
-    margin: 40px 140px;
-}
-
 /*Logo*/
 
 .logo {
@@ -62,36 +49,4 @@
 
 .logic {
     grid-area: logic;
-}
-
-@media (max-width: 1240px) {
-    .joke_logic {
-        display: grid;
-        grid-template-areas:
-                "logo"
-                "intro"
-                "logic";
-        grid-template-rows: max-content 1fr max-content;
-        grid-template-columns: 1fr;
-        padding: 40px;
-        margin: 0;
-    }
-}
-
-@media (max-width: 960px) {
-    .joke_logic {
-        display: block;
-        position: relative;
-        /*overflow-y: scroll;*/
-        /*z-index: 90;*/
-        /*background: rgba(0,0,0,.3);*/
-    }
-
-    /*.joke_logic_deactivate {*/
-    /*    display: block;*/
-    /*    position: relative;*/
-    /*    background: rgba(0,0,0,.35);*/
-    /*    z-index: 90;*/
-    /*    overflow: hidden;*/
-    /*}*/
 }

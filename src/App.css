@@ -2,19 +2,14 @@
 
 .main_content {
   font-family: Roboto, serif;
-  display: grid;
-  grid-template-areas:
-          "main sidebar";
-  grid-template-rows: 1fr;
-  grid-template-columns: 2fr 480px;
-  height: 100vh;
-  background: #FFFFFF;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (max-width: 960px) {
   .main_content {
     display: block;
     position: relative;
-    overflow: auto;
   }
 }

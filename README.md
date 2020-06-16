@@ -1,7 +1,5 @@
 ## Chuck Norris Joke App
 
-#### This test-project was developed for 2020 Summer internship at [MacPaw](https://macpaw.com/)
-
 #### For getting jokes, project using [Chuck Norris API](https://api.chucknorris.io/)
 
 ### Implemented features:
@@ -13,8 +11,8 @@
 - Favourite jokes is available after reloading the page and stored in the browser.
 
 ### Working on:
-- Favourite jokes should be visible in search result.
 - Mobile view.
 - Unit tests.
 - Correct jokes rendering.
-- Adding visual validation on Search input form.
+- Fix validation.
+- Favourite jokes should be visible in search result.

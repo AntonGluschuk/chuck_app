@@ -20,13 +20,13 @@ function Sidebar() {
     /*Change className for aside*/
     let openSide;
     if(!visibleSide) {
-        openSide = "sidebar";
+        openSide = "";
     } else {
         openSide = "sidebar_active";
     }
 
     return (
-        <aside className={openSide}>
+        <aside className={`sidebar height ${openSide}`}>
             {visibleSide ? <SideButton/> : <div className="fav_title">Favourite</div>}
             <div className="favourite_jokes">
                 {selected === 'option1' || selected === 'option2' ?

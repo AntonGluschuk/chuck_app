@@ -10,7 +10,7 @@ function JokeItself({ id, value, category, updated_at, likeJoke }) {
         return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
     };
 
-    return (
+    return (<div>{ value ?
         <div className="rectangle">
             <button className="favorite_joke" onClick={() => likeJoke(id)}>
                 <FontAwesomeIcon className="favorite_icon" icon={ faHeart } size="2x" />
@@ -31,6 +31,9 @@ function JokeItself({ id, value, category, updated_at, likeJoke }) {
                 </div>
             </div>
         </div>
+    :
+            null
+        }</div>
     );
 }
 

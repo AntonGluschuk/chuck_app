@@ -5,14 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeButton/JokeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeButton/JokeButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideButton/SideButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideButton/SideButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
@@ -56,15 +55,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains2\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeItself\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\msi2020\src\components" />
+      <recent name="C:\msi2020\src" />
       <recent name="C:\msi2020\public" />
       <recent name="C:\msi2020\src\images" />
-      <recent name="C:\msi2020\src\components" />
       <recent name="C:\msi2020\src\components\Sidebar\FavJokeItself\images" />
-      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeOptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeItself\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,7 +137,13 @@
       <workItem from="1590163197610" duration="9734000" />
       <workItem from="1590221686867" duration="2808000" />
       <workItem from="1590394269798" duration="11803000" />
-      <workItem from="1590671701966" duration="8812000" />
+      <workItem from="1590671701966" duration="11498000" />
+      <workItem from="1590762120414" duration="2260000" />
+      <workItem from="1591097642497" duration="2987000" />
+      <workItem from="1591972810793" duration="554000" />
+      <workItem from="1592053723316" duration="4989000" />
+      <workItem from="1592216728559" duration="9857000" />
+      <workItem from="1592318143894" duration="9612000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -294,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590223887935</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="19:11 28/05/20 implementing mobile and tablet view">
+      <created>1590682325052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590682325052</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +351,7 @@
     <MESSAGE value="11:40 23/05/20 rewrite readme file" />
     <MESSAGE value="11:48 23/05/20 fix readme file" />
     <MESSAGE value="11:51 23/05/20 fix readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="11:51 23/05/20 fix readme file" />
+    <MESSAGE value="19:11 28/05/20 implementing mobile and tablet view" />
+    <option name="LAST_COMMIT_MESSAGE" value="19:11 28/05/20 implementing mobile and tablet view" />
   </component>
 </project>

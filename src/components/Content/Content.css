@@ -1,8 +1,16 @@
 /*Content*/
 
 .content {
-    grid-area: main;
-    font-family: "Roboto", sans-serif;
+    flex: 0 1 700px;
+    margin: 0 auto;
+    padding: 40px 10px;
+}
+
+@media (max-width: 1240px) {
+    .content {
+        padding: 40px;
+        flex: 1 1 auto;
+    }
 }
 
 @media (max-width: 960px) {
@@ -10,13 +18,13 @@
         display: block;
         position: relative;
     }
-
-    .deactivate_content {
-        display: block;
-        position: relative;
-        background: rgba(0,0,0,.3);
-        z-index: 90;
-        overflow: hidden;
-        pointer-events: none;
+    .content_deactivate:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
     }
 }

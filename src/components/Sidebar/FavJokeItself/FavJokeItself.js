@@ -10,10 +10,10 @@ function FavJokeItself({ id, value, category, updated_at, unlikeJoke }) {
         return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
     };
 
-    return (
+    return (<div>{value ?
         <div className="fav_rectangle">
             <button className="fav_favorite_joke" onClick={() => unlikeJoke(id)}>
-                <FontAwesomeIcon className="fav_favorite_icon" icon={ faHeart } size="2x"/>
+                <FontAwesomeIcon className="fav_favorite_icon" icon={faHeart} size="2x"/>
             </button>
             <div className="fav_joke">
                 <div className="fav_comment_circle">
@@ -31,6 +31,9 @@ function FavJokeItself({ id, value, category, updated_at, unlikeJoke }) {
                 </div>
             </div>
         </div>
+        :
+            null
+        }</div>
     );
 }
 

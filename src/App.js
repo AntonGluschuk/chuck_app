@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import {JokeProvider} from "./components/JokeContext";
 
 function App() {
+
   return (
       <JokeProvider>
           <section className="main_content">

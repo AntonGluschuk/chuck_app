@@ -53,7 +53,8 @@ function JokeLogic() {
         else if(selected === "option3") {
             const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${query}`);
             const data = await response.json();
-            setJokes(data.result);
+            const singleJoke = randomSearchJoke(data.result);
+            setJokes(singleJoke);
             setLoading(false);
         }
     };
@@ -65,17 +66,20 @@ function JokeLogic() {
     const likeJoke = (id) => {
         let favJoke;
       if (favJokes.find((joke) => joke.id === id)) return;
-      if(jokes.length > 0) {
-          jokes.forEach(joke => {
-              if(joke.id === id) {
-                  favJoke = joke;
-              }
-          })
+
+      if(jokes.id === id) {
+          favJoke = jokes;
       }
+
       if (data.id === id ) {
           favJoke = data;
       }
       setFavJokes([favJoke, ...favJokes]);
+    };
+
+    const randomSearchJoke = (jokess) =>  {
+        let randJ = Math.floor(Math.random() * jokess.length);
+      return jokess[randJ];
     };
 
     return (
@@ -106,27 +110,23 @@ function JokeLogic() {
 
             {/*Jokes*/}
             {selected === 'option1' || selected === 'option2' ?
-                    <JokeItself
-                      value={data.value}
-                      id={data.id}
-                      category={data.categories}
-                      updated_at={data.updated_at}
-                      likeJoke={likeJoke}
-                      key={data.id}
-                    />
+                <JokeItself
+                  value={data.value}
+                  id={data.id}
+                  category={data.categories}
+                  updated_at={data.updated_at}
+                  likeJoke={likeJoke}
+                  key={data.id}
+                />
                 :
-                jokes.map(joke => {
-                    return (
-                    <JokeItself
-                    value={joke.value}
-                    id={joke.id}
-                    category={joke.categories}
-                    updated_at={joke.updated_at}
+                <JokeItself
+                    value={jokes.value}
+                    id={jokes.id}
+                    category={jokes.categories}
+                    updated_at={jokes.updated_at}
                     likeJoke={likeJoke}
-                    key={joke.id}
-                    />
-                    )
-                })
+                    key={jokes.id}
+                />
             }
         </div>
     );

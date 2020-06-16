@@ -3,20 +3,24 @@
 /*SideBar*/
 
 .sidebar {
-    grid-area: sidebar;
-    background: #F8F8F8;
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 480px;
     padding: 40px;
-    top: 0;
-    right: 0;
-    height: 100%;
-    max-width: 480px;
+    background: #F8F8F8;
 }
 
+/*Need to fix*/
+
+.height {
+    /*height: 100%;*/
+}
+
+.favourite_jokes{
+    width: 100%;
+}
 /*SideBar Favourite heading*/
 
 .fav_title {
+    display: inline;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -28,32 +32,30 @@
 @media (max-width: 960px) {
     .sidebar {
         display: none;
-        background: #F8F8F8;
+        position: absolute;
         top: 0;
         right: 0;
-        position: absolute;
+        z-index: 3;
     }
     .fav_title {
-        display: none;
+        /*display: none;*/
     }
     .sidebar_active {
-        width: 480px;
-        height: 100%;
-        background: #F8F8F8;
-        padding: 40px;
-        padding-top: 60px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
         display: block;
-        z-index: 200;
-        overflow-y: scroll;
+        width: 480px;
+        min-height: 100vh;
+        box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
     }
 }
 
 @media (max-width: 430px) {
     .sidebar_active {
         max-width: 360px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sidebar_active {
+        max-width: 310px;
     }
 }
