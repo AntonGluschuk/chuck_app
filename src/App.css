@@ -1,7 +1,7 @@
+@import "index.css";
 /*Main and SideBar*/
 
 .main_content {
-  font-family: Roboto, serif;
   display: flex;
   max-width: 1440px;
   margin: 0 auto;

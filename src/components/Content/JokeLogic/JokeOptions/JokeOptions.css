@@ -29,11 +29,8 @@
     padding: 0 30px;
     margin-bottom: 15px;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    color: #333333;
 }
 
 .radio_label:before, :after {
@@ -68,29 +65,25 @@
 /*Radio button = Search*/
 
 .search {
-    display: grid;
-    min-height: 6vh;
-    margin: 5px 0;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 /*Search input*/
 
 .search_input {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+    width: 100%;
+    padding: 8px 13px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #333333;
-    padding: 0 5px;
     border: 2px solid #333333;
     box-sizing: border-box;
     border-radius: 10px;
 }
 
 .search_input::placeholder {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;

@@ -1,3 +1,4 @@
+@import "../../index.css";
 /*Menu for tablet and mobile*/
 
 .side_fav_menu {
@@ -11,35 +12,53 @@
 @media (max-width: 960px) {
     .side_fav_menu {
         display: flex;
-        width: 122px;
-        height: 28px;
+        z-index: 4;
         top: 40px;
-        right: 40px;
-        padding: 0;
-        margin: 0;
-        background-color: transparent;
     }
 
-    .side_fav_btn {
-        display: flex;
-        border: none;
+    .side_fav_icon {
         cursor: pointer;
-        background-color: transparent;
-        margin: 0;
-        padding: 0;
-    }
-
-    .fav_btn_icon {
+        margin-right: 10px;
+        background: #333;
+        border-radius: 50%;
+        padding: 10px 7px;
         width: 28px;
         height: 28px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .side_fav_icon-line{
+        display: block;
+        width: 14px;
+        height: 2px;
+        background: #fff;
+        border-radius: 2px;
+        position: absolute;
+    }
+
+    .first-line{
+        top: 10px;
+    }
+
+    .second-line{
+        bottom: 10px;
+    }
+
+    .menu_active .first-line{
+        top: 13px;
+        transition: 0.1s;
+        transform: rotate(45deg);
+    }
+
+    .menu_active .second-line{
+        bottom: 13px;
+        transition: 0.1s;
+        transform: rotate(-45deg);
     }
 
     .side_fav_title {
         display: inline;
-        margin-left: 10px;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: 500;
         font-size: 20px;
         line-height: 28px;
         color: #ABABAB;

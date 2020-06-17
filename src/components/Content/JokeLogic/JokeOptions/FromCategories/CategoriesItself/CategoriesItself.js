@@ -7,9 +7,9 @@ const Button = styled.button`
   color: #ABABAB;
   background-color: white;
   font-size: 12px;
-  font-family: sans-serif;;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -19,6 +19,9 @@ const Button = styled.button`
   box-sizing: border-box;
   margin: 8px 8px;
   cursor: pointer;
+  &:hover {
+    color: #333;
+  };
 `;
 
 const ButtonToggle = styled(Button)`
@@ -26,9 +29,9 @@ const ButtonToggle = styled(Button)`
   ${({ active }) =>
     active &&
     `
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;

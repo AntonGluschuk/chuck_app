@@ -1,3 +1,4 @@
+@import "../../index.css";
 @import "../Content/JokeLogic/JokeLogic.css";
 
 /*SideBar*/
@@ -8,12 +9,6 @@
     background: #F8F8F8;
 }
 
-/*Need to fix*/
-
-.height {
-    /*height: 100%;*/
-}
-
 .favourite_jokes{
     width: 100%;
 }
@@ -21,9 +16,6 @@
 
 .fav_title {
     display: inline;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     color: #ABABAB;
@@ -38,7 +30,7 @@
         z-index: 3;
     }
     .fav_title {
-        /*display: none;*/
+        visibility: hidden;
     }
     .sidebar_active {
         display: block;
@@ -49,13 +41,29 @@
 }
 
 @media (max-width: 430px) {
+    .sidebar {
+        padding: 20px;
+    }
+
     .sidebar_active {
-        max-width: 360px;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 380px) {
+    .sidebar {
+        padding: 20px;
+    }
+    .sidebar_active {
+        max-width: 373px;
     }
 }
 
 @media (max-width: 320px) {
+    .sidebar {
+        padding: 20px;
+    }
     .sidebar_active {
-        max-width: 310px;
+        max-width: 320px;
     }
 }

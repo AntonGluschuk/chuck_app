@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "./Sidebar.css";
 import { JokeContext } from "../JokeContext";
 import FavJokeItself from "./FavJokeItself/FavJokeItself";
-import SideButton from "../SideButton/SideButton";
 
 function Sidebar() {
     const {
@@ -27,7 +26,7 @@ function Sidebar() {
 
     return (
         <aside className={`sidebar height ${openSide}`}>
-            {visibleSide ? <SideButton/> : <div className="fav_title">Favourite</div>}
+            <div className="fav_title">Favourite</div>
             <div className="favourite_jokes">
                 {selected === 'option1' || selected === 'option2' ?
                     favJokes.map(joke => {
