@@ -89,3 +89,18 @@
     line-height: 22px;
     color: #ABABAB;
 }
+
+.search_input_inv_size{
+    display: block;
+    margin: 5px 0;
+    font-size: 18px;
+    color: #FF6767;
+}
+
+.search_input_invalid{
+    display: block;
+    margin: 5px 0;
+    font-size: 18px;
+    color: #FF6767;
+    visibility: visible;
+}

@@ -22,7 +22,8 @@ function JokeLogic() {
         active,
         setActive,
         query,
-        setQuery
+        setQuery,
+        setValidSearchValue
     } = useContext(JokeContext);
 
     useEffect(() => {
@@ -54,7 +55,18 @@ function JokeLogic() {
             const response = await fetch(`https://api.chucknorris.io/jokes/search?query=${query}`);
             const data = await response.json();
             const singleJoke = randomSearchJoke(data.result);
-            setJokes(singleJoke);
+            checkValidQuery(singleJoke);
+        }
+    };
+
+    const checkValidQuery = (singleJ) => {
+        if(singleJ === undefined) {
+            setQuery("");
+            setValidSearchValue(false);
+        } else {
+            setJokes(singleJ);
+            setValidSearchValue(true);
+            setQuery("");
             setLoading(false);
         }
     };
