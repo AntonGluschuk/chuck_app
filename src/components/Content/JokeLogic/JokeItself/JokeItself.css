@@ -122,6 +122,8 @@
     display: none;
 }
 
+/*Joke mobile view*/
+
 @media (max-width: 1240px) {
     .joke_category {
         padding: 5px 10px;

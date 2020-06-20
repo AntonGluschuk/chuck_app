@@ -7,6 +7,8 @@
     padding: 40px 10px;
 }
 
+/*Content mobile view*/
+
 @media (max-width: 1240px) {
     .content {
         padding: 40px;

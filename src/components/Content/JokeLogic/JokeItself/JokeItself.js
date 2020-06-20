@@ -31,7 +31,7 @@ function JokeItself({ id, value, category, updated_at, likeJoke }) {
                 </div>
             </div>
         </div>
-    :
+        :
             null
         }</div>
     );

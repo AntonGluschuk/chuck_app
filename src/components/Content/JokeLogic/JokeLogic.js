@@ -3,8 +3,8 @@ import "./JokeLogic.css";
 import JokeItself from "./JokeItself/JokeItself";
 import JokeOptions from "./JokeOptions/JokeOptions";
 import JokeButton from "./JokeButton/JokeButton";
-import { JokeContext } from "../../JokeContext";
 import SideButton from "../../SideButton/SideButton";
+import { JokeContext } from "../../JokeContext";
 
 function JokeLogic() {
     const {
@@ -72,7 +72,16 @@ function JokeLogic() {
     };
 
     const handleOptionChange = e => {
-       setSelected(e.target.value);
+        if(selected === "option1" || selected === "option3") {
+            setActive("animal");
+            setSelected(e.target.value);
+        }
+        else if(selected === "option1" || selected === "option2") {
+            setValidSearchValue(true);
+            setSelected(e.target.value);
+        } else {
+            setSelected(e.target.value);
+        }
     };
 
     const likeJoke = (id) => {

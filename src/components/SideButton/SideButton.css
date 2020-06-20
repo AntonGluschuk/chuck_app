@@ -1,5 +1,5 @@
 @import "../../index.css";
-/*Menu for tablet and mobile*/
+/*Menu with button for tablet and mobile, appeared in top-right corner*/
 
 .side_fav_menu {
     display: none;
@@ -8,6 +8,8 @@
 .side_fav_title {
     display: none;
 }
+
+/*Mobile view*/
 
 @media (max-width: 960px) {
     .side_fav_menu {

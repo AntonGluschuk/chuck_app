@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import Random from "./Random/Random";
 import FromCategories from "./FromCategories/FromCategories";
-import CategoriesItself from "./FromCategories/CategoriesItself/CategoriesItself";
 import Search from "./Search/Search";
+import CategoriesItself from "./FromCategories/CategoriesItself/CategoriesItself";
 import "./JokeOptions.css";
 import {JokeContext} from "../../../JokeContext";
 
