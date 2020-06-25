@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +141,9 @@
       <workItem from="1592401632999" duration="13951000" />
       <workItem from="1592497950856" duration="3218000" />
       <workItem from="1592570839817" duration="8465000" />
-      <workItem from="1592657476037" duration="7960000" />
+      <workItem from="1592657476037" duration="8483000" />
+      <workItem from="1592926727903" duration="1923000" />
+      <workItem from="1593104406582" duration="7431000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -330,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592663850435</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="18:47 20/06/20 fixed new problems with mobile view and render bugs">
+      <created>1592668138058</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1592668138058</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,8 +355,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="23:17 05/05/20 setup project structure" />
-    <MESSAGE value="21:03 06/05/20 finished radio_b, start handle categories" />
     <MESSAGE value="21:49 07/05/20 finished css, start categories and search" />
     <MESSAGE value="21:49 07/05/20 refactor css, start categories and search" />
     <MESSAGE value="12:04 08/05/20 fixed comments" />
@@ -376,6 +378,8 @@
     <MESSAGE value="20:46 16/06/20 fixing mobile view, still have some work" />
     <MESSAGE value="20:48 76/06/20 almost finished mobile view" />
     <MESSAGE value="17:35 20/06/20 fixed mobile view, working on render among different options" />
-    <option name="LAST_COMMIT_MESSAGE" value="17:35 20/06/20 fixed mobile view, working on render among different options" />
+    <MESSAGE value="18:47 20/06/20 fixed new problems with mobile view and render bugs" />
+    <MESSAGE value="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook" />
   </component>
 </project>

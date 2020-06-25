@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import "./JokeLogic.css";
 import JokeItself from "./JokeItself/JokeItself";
 import JokeOptions from "./JokeOptions/JokeOptions";
@@ -8,14 +8,13 @@ import { JokeContext } from "../../JokeContext";
 
 function JokeLogic() {
     const {
-        data,
-        setData,
         jokes,
         setJokes,
         favJokes,
         setFavJokes,
         selected,
         setSelected,
+        loading,
         setLoading,
         categories,
         setCategories,
@@ -26,29 +25,24 @@ function JokeLogic() {
         setValidSearchValue
     } = useContext(JokeContext);
 
-    useEffect(() => {
-        setLoading(true);
-        getAJoke();
-        const fetchCategories = async () => {
-            const response = await fetch('https://api.chucknorris.io/jokes/categories');
-            const data = await response.json();
-            setCategories(data);
-            setLoading(false);
-        };
-        fetchCategories();
-    }, []);
+    const getCategories = async () => {
+        const response = await fetch('https://api.chucknorris.io/jokes/categories');
+        const data = await response.json();
+        setCategories(data);
+    };getCategories().catch(e => {console.log(e);});
 
     const getAJoke = async () => {
+        setLoading(true);
         if(selected === "option1") {
             const response = await fetch('https://api.chucknorris.io/jokes/random');
             const data = await response.json();
-            setData(data);
+            setJokes(data);
             setLoading(false);
         }
         else if(selected === "option2") {
             const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${active}`);
             const data = await response.json();
-            setData(data);
+            setJokes(data);
             setLoading(false);
         }
         else if(selected === "option3") {
@@ -63,6 +57,7 @@ function JokeLogic() {
         if(singleJ === undefined) {
             setQuery("");
             setValidSearchValue(false);
+            setLoading(false);
         } else {
             setJokes(singleJ);
             setValidSearchValue(true);
@@ -92,9 +87,6 @@ function JokeLogic() {
           favJoke = jokes;
       }
 
-      if (data.id === id ) {
-          favJoke = data;
-      }
       setFavJokes([favJoke, ...favJokes]);
     };
 
@@ -128,27 +120,17 @@ function JokeLogic() {
                 {/*Get a Joke Button*/}
                 <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
             </div>
-
+            {/*Loader*/}
+            {loading && <span className="joke_loader"> </span>}
             {/*Jokes*/}
-            {selected === 'option1' || selected === 'option2' ?
-                <JokeItself
-                  value={data.value}
-                  id={data.id}
-                  category={data.categories}
-                  updated_at={data.updated_at}
-                  likeJoke={likeJoke}
-                  key={data.id}
-                />
-                :
-                <JokeItself
-                    value={jokes.value}
-                    id={jokes.id}
-                    category={jokes.categories}
-                    updated_at={jokes.updated_at}
-                    likeJoke={likeJoke}
-                    key={jokes.id}
-                />
-            }
+            <JokeItself
+                value={jokes.value}
+                id={jokes.id}
+                category={jokes.categories}
+                updated_at={jokes.updated_at}
+                likeJoke={likeJoke}
+                key={jokes.id}
+            />
         </div>
     );
 }

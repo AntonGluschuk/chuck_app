@@ -9,10 +9,9 @@
 - Any joke can be marked/unmarked as favourite.
 - Jokes marked as favourite appear in the right section Favourite.
 - Favourite jokes is available after reloading the page and stored in the browser.
+- Mobile view.
 
 ### Working on:
-- Mobile view.
 - Unit tests.
 - Correct jokes rendering.
-- Fix validation.
 - Favourite jokes should be visible in search result.

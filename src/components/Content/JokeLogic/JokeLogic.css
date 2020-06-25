@@ -27,3 +27,48 @@
     line-height: 44px;
     margin-bottom: 43px;
 }
+
+/*Loading spinner*/
+
+.joke_loader {
+    position: absolute;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 40px);
+    width: 80px;
+    height: 80px;
+}
+
+.joke_loader:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid;
+    border-color: #FF6767 transparent #FF6767 transparent;
+    -webkit-animation: joke_loader 1.2s linear infinite;
+    -moz-animation: joke_loader 1.2s linear infinite;
+    animation: joke_loader 1.2s linear infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes joke_loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes joke_loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -3,9 +3,8 @@ import React, {createContext, useState, useEffect} from "react";
 export const JokeContext = createContext();
 
 export const JokeProvider = (props) => {
-    const [data, setData] = useState({});
-    const [jokes, setJokes] = useState([]);
     const initialFavJoke = () => (JSON.parse(localStorage.getItem('favourite_jokes')) || []);
+    const [jokes, setJokes] = useState([]);
     const [favJokes, setFavJokes] = useState(initialFavJoke);
     const [selected, setSelected] = useState("option1");
     const [loading, setLoading] = useState(false);
@@ -17,8 +16,6 @@ export const JokeProvider = (props) => {
     const [validSearchValue, setValidSearchValue] = useState(true);
 
     const providerValue = {
-        data,
-        setData,
         jokes,
         setJokes,
         favJokes,

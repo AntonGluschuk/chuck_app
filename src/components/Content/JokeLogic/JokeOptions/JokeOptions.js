@@ -14,7 +14,7 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
     } = useContext(JokeContext);
 
     const handleSearchValue = e => {
-        if(e.target.value.length < 3) {
+        if(e.target.value.length < 3 || e.target.value.length > 120) {
             setValidSearch(false);
         } else {
             setValidSearch(true);
