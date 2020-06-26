@@ -36,13 +36,13 @@ function JokeLogic() {
         if(selected === "option1") {
             const response = await fetch('https://api.chucknorris.io/jokes/random');
             const data = await response.json();
-            setJokes(data);
+            setJokes([data, ...jokes]);
             setLoading(false);
         }
         else if(selected === "option2") {
             const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${active}`);
             const data = await response.json();
-            setJokes(data);
+            setJokes([data, ...jokes]);
             setLoading(false);
         }
         else if(selected === "option3") {
@@ -59,7 +59,7 @@ function JokeLogic() {
             setValidSearchValue(false);
             setLoading(false);
         } else {
-            setJokes(singleJ);
+            setJokes([singleJ, ...jokes]);
             setValidSearchValue(true);
             setQuery("");
             setLoading(false);
@@ -81,11 +81,9 @@ function JokeLogic() {
 
     const likeJoke = (id) => {
         let favJoke;
-      if (favJokes.find((joke) => joke.id === id)) return;
+      if (favJokes.find(joke => joke.id === id)) return;
 
-      if(jokes.id === id) {
-          favJoke = jokes;
-      }
+      favJoke = jokes.find(joke => joke.id === id);
 
       setFavJokes([favJoke, ...favJokes]);
     };
@@ -123,14 +121,20 @@ function JokeLogic() {
             {/*Loader*/}
             {loading && <span className="joke_loader"> </span>}
             {/*Jokes*/}
-            <JokeItself
-                value={jokes.value}
-                id={jokes.id}
-                category={jokes.categories}
-                updated_at={jokes.updated_at}
-                likeJoke={likeJoke}
-                key={jokes.id}
-            />
+            {
+                jokes.map(joke => {
+                    return (
+                        <JokeItself
+                            value={joke.value}
+                            id={joke.id}
+                            category={joke.categories}
+                            updated_at={joke.updated_at}
+                            likeJoke={likeJoke}
+                            key={joke.id}
+                        />
+                    )
+                })
+            }
         </div>
     );
 }

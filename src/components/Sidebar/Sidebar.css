@@ -35,6 +35,11 @@
     .fav_title {
         visibility: hidden;
     }
+
+    .height {
+        height: 100%;
+    }
+
     .sidebar_active {
         display: block;
         width: 480px;
@@ -43,29 +48,10 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     .sidebar {
         padding: 20px;
-    }
-    .sidebar_active {
-        max-width: 420px;
+        width: 100%;
     }
 }
 
-@media (max-width: 380px) {
-    .sidebar {
-        padding: 20px;
-    }
-    .sidebar_active {
-        max-width: 373px;
-    }
-}
-
-@media (max-width: 320px) {
-    .sidebar {
-        padding: 20px;
-    }
-    .sidebar_active {
-        max-width: 320px;
-    }
-}

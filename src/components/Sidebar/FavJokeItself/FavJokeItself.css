@@ -125,13 +125,10 @@
 
 /*FavJoke mobile view*/
 
-@media (max-width: 1240px) {
-    .joke_category {
-        padding: 5px 10px;
+@media (max-width: 480px) {
+    .fav_rectangle {
+        width: 100%;
     }
-}
-
-@media (max-width: 430px) {
     .fav_joke_value {
         max-width: calc(100vw - 140px);
     }

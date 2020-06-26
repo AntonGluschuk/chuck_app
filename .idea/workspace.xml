@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook">
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/JokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideButton/SideButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJokeItself/FavJokeItself.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,8 @@
       <workItem from="1592570839817" duration="8465000" />
       <workItem from="1592657476037" duration="8483000" />
       <workItem from="1592926727903" duration="1923000" />
-      <workItem from="1593104406582" duration="7431000" />
+      <workItem from="1593104406582" duration="7507000" />
+      <workItem from="1593182215823" duration="6937000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -334,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592668138058</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook">
+      <created>1593113383401</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1593113383401</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

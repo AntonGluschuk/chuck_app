@@ -24,7 +24,7 @@ function Sidebar() {
     }
 
     return (
-        <aside className={`sidebar ${openSide}`}>
+        <aside className={`sidebar height ${openSide}`}>
             <div className="fav_title">Favourite</div>
             <div className="favourite_jokes">
             {
