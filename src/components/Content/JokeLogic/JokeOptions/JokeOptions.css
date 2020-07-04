@@ -1,8 +1,6 @@
-@import "../../../../index.css";
-
 /* RadioButton Container */
 
-.select_option {
+.joke-options {
     display: flex;
     flex-direction: column;
 }
@@ -11,19 +9,19 @@
  and here https://dev.to/lkopacz/create-custom-keyboard-accessible-radio-buttons-22eh
 */
 
-.form-check-input {
+.joke-options__form-input {
     display: none;
 }
 
-.form-check-input:checked + label:before {
+.joke-options__form-input:checked + label:before {
     border-color: #333333;
 }
 
-.form-check-input:checked + label:after {
+.joke-options__form-input:checked + label:after {
     transform: scale(1);
 }
 
-.radio_label {
+.joke-options__form-label {
     display: inline-block;
     position: relative;
     padding: 0 30px;
@@ -33,7 +31,7 @@
     font-size: 18px;
 }
 
-.radio_label:before, :after {
+.joke-options__form-label:before, :after {
     position: absolute;
     content: '';
     border-radius: 50%;
@@ -41,7 +39,7 @@
     transition-property: transform, border-color;
 }
 
-.radio_label:before {
+.joke-options__form-label:before {
     left: 0;
     top: 0;
     width: 20px;
@@ -49,7 +47,7 @@
     border: 2px solid #ABABAB;
 }
 
-.radio_label:after {
+.joke-options__form-label:after {
     top: 5px;
     left: 5px;
     width: 10px;
@@ -64,7 +62,7 @@
 
 /*Radio button = Search*/
 
-.search {
+.joke-options__search-form {
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -72,7 +70,7 @@
 
 /*Search input*/
 
-.search_input {
+.joke-options__search-input {
     width: 100%;
     padding: 8px 13px;
     font-weight: normal;
@@ -83,21 +81,21 @@
     border-radius: 10px;
 }
 
-.search_input::placeholder {
+.joke-options__search-input::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #ABABAB;
 }
 
-.search_input_inv_size{
+.joke-options__invalid-size{
     display: block;
     margin: 5px 0;
     font-size: 18px;
     color: #FF6767;
 }
 
-.search_input_invalid{
+.joke-options__invalid-value{
     display: block;
     margin: 5px 0;
     font-size: 18px;

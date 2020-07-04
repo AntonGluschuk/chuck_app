@@ -13,5 +13,4 @@
 
 ### Working on:
 - Unit tests.
-- Correct jokes rendering.
 - Favourite jokes should be visible in search result.

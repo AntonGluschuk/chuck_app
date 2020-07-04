@@ -6,9 +6,9 @@ function JokeButton({ getAJoke, query, selected }) {
     return (
         <div>
         {selected === 'option3' ?
-            <button className="btn" onClick={getAJoke} disabled={query.length < 3}>Get a joke</button>
+            <button className="joke-btn" onClick={getAJoke} disabled={query.length < 3}>Get a joke</button>
         :
-            <button className="btn" onClick={getAJoke}>Get a joke</button>
+            <button className="joke-btn" onClick={getAJoke}>Get a joke</button>
         }
         </div>
 

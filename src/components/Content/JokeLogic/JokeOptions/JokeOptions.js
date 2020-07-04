@@ -2,9 +2,9 @@ import React, {useContext} from "react";
 import Random from "./Random/Random";
 import FromCategories from "./FromCategories/FromCategories";
 import Search from "./Search/Search";
-import CategoriesItself from "./FromCategories/CategoriesItself/CategoriesItself";
+import Categories from "./FromCategories/Categories/Categories";
 import "./JokeOptions.css";
-import {JokeContext} from "../../../JokeContext";
+import {JokeContext} from "../../../JokeContext/JokeContext";
 
 function JokeOptions({ selected, handleOptionChange, categories, active, setActive, query, setQuery, getAJoke }) {
     const {
@@ -23,17 +23,17 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
     };
 
     return (
-        <div className="select_option">
+        <div className="joke-options">
                 {/* Random RadioButton*/}
                 <Random checked={selected} handleOptionChange={handleOptionChange}/>
                 {/* FromCategories RadioButton*/}
                 <FromCategories checked={selected} handleOptionChange={handleOptionChange}/>
                 {/* Categories List*/}
                 {(selected === "option2") ?
-                    <CategoriesItself selected={selected}
-                                      categories={categories}
-                                      active={active}
-                                      setActive={setActive}
+                    <Categories selected={selected}
+                                categories={categories}
+                                active={active}
+                                setActive={setActive}
                     />
                     :
                     null
@@ -41,9 +41,9 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
                 {/* Search RadioButton*/}
                 <Search checked={selected} handleOptionChange={handleOptionChange}/>
                 {(selected === "option3") ?
-                    <form className="search">
+                    <form className="joke-options__search-form">
                         <input
-                            className="search_input"
+                            className="joke-options__search-input"
                             type="text"
                             placeholder="Free text search..."
                             value={query}
@@ -57,8 +57,8 @@ function JokeOptions({ selected, handleOptionChange, categories, active, setActi
                                 }
                             }}
                         />
-                        {!validSearch && <span className="search_input_inv_size">Text size must be between 3 and 120 characters</span>}
-                        {!validSearchValue && <span className="search_input_invalid">Enter a valid search value</span>}
+                        {!validSearch && <span className="joke-options__invalid-size">Text size must be between 3 and 120 characters</span>}
+                        {!validSearchValue && <span className="joke-options__invalid-value">Enter a valid search value</span>}
                     </form>
                     :
                     null

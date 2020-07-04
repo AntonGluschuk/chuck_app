@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { JokeContext } from "../JokeContext";
+import { JokeContext } from "../../JokeContext/JokeContext";
 import "./SideButton.css";
 
 function SideButton() {
@@ -21,18 +21,18 @@ function SideButton() {
     if(!visibleSide) {
         changeIcon = "";
     } else {
-        changeIcon = "menu_active";
+        changeIcon = "side-button_active";
     }
 
     return (
-        <div className={`side_fav_menu ${changeIcon}`} onClick={() => openSideBar()}>
-            <div className="side_fav_icon">
-                <span className="side_fav_icon-line first-line">
+        <div className={`side-button ${changeIcon}`} onClick={() => openSideBar()}>
+            <div className="side-button__icon">
+                <span className="side-button__icon-line first-line">
                 </span>
-                <span className="side_fav_icon-line second-line">
+                <span className="side-button__icon-line second-line">
                 </span>
             </div>
-            <div className="side_fav_title">Favourite</div>
+            <div className="side-button__title">Favourite</div>
         </div>
     )
 }

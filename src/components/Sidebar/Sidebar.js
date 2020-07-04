@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Sidebar.css";
-import { JokeContext } from "../JokeContext";
-import FavJokeItself from "./FavJokeItself/FavJokeItself";
+import { JokeContext } from "../JokeContext/JokeContext";
+import FavJoke from "./FavJoke/FavJoke";
+
 
 function Sidebar() {
+
     const {
         favJokes,
         setFavJokes,
@@ -24,13 +26,13 @@ function Sidebar() {
     }
 
     return (
-        <aside className={`sidebar height ${openSide}`}>
-            <div className="fav_title">Favourite</div>
-            <div className="favourite_jokes">
+        <aside className={`sidebar sidebar_height ${openSide}`}>
+            <div className="sidebar__title">Favourite</div>
+            <div className="sidebar__jokes">
             {
                 favJokes.map(joke => {
                     return (
-                        <FavJokeItself
+                        <FavJoke
                             value={joke.value}
                             id={joke.id}
                             category={joke.categories}

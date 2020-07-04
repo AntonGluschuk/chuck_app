@@ -2,9 +2,9 @@ import React from "react";
 
 function Random({ handleOptionChange, checked }) {
     return (
-        <div className="form-check">
+        <form className="joke-options__form">
             <input
-                className="form-check-input"
+                className="joke-options__form-input"
                 id="random"
                 type="radio"
                 name="react-tips"
@@ -12,8 +12,8 @@ function Random({ handleOptionChange, checked }) {
                 checked={checked === "option1"}
                 onChange={handleOptionChange}
             />
-            <label className="radio_label" htmlFor="random">Random</label>
-        </div>
+            <label className="joke-options__form-label" htmlFor="random">Random</label>
+        </form>
     );
 }
 

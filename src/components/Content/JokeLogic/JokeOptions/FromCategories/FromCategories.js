@@ -2,9 +2,9 @@ import React from "react";
 
 function FromCategories({ handleOptionChange, checked }) {
     return (
-        <div className="form-check">
+        <form className="joke-options__form">
             <input
-                className="form-check-input"
+                className="joke-options__form-input"
                 id="from-categories"
                 type="radio"
                 name="react-tips"
@@ -12,8 +12,8 @@ function FromCategories({ handleOptionChange, checked }) {
                 checked={checked === "option2"}
                 onChange={handleOptionChange}
             />
-            <label className="radio_label" htmlFor="from-categories">From categories</label>
-        </div>
+            <label className="joke-options__form-label" htmlFor="from-categories">From categories</label>
+        </form>
     );
 }
 

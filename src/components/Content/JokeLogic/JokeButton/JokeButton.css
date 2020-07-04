@@ -1,7 +1,6 @@
-@import "../../../../index.css";
 /*Get a joke button*/
 
-.btn {
+.joke-btn {
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
@@ -13,6 +12,6 @@
     border: none;
 }
 
-.btn:hover {
+.joke-btn:hover {
     background: linear-gradient(92.01deg, #7291FF 0%, #8EA7FF 100%);
 }

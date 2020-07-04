@@ -1,15 +1,10 @@
-@import "../../index.css";
-/*Menu with button for tablet and mobile, appeared in top-right corner*/
+/*Button for tablet and mobile view, appeared in top-right corner on 960px screen width*/
 
-.side_fav_menu {
+.side-button {
     display: none;
 }
 
-.side_fav_title {
-    display: none;
-}
-
-.side_fav_icon {
+.side-button__icon {
     cursor: pointer;
     margin-right: 10px;
     background: #333;
@@ -21,7 +16,7 @@
     box-sizing: border-box;
 }
 
-.side_fav_icon-line{
+.side-button__icon-line{
     display: block;
     width: 14px;
     height: 2px;
@@ -38,31 +33,34 @@
     bottom: 10px;
 }
 
-.menu_active .first-line{
+.side-button_active .first-line{
     top: 13px;
     transition: 0.1s;
     transform: rotate(45deg);
 }
 
-.menu_active .second-line{
+.side-button_active .second-line{
     bottom: 13px;
     transition: 0.1s;
     transform: rotate(-45deg);
 }
 
-.side_fav_title {
-    display: inline;
-    font-size: 20px;
-    line-height: 28px;
-    color: #ABABAB;
+.side-button__title {
+    display: none;
 }
 
 /*Mobile view*/
 
 @media (max-width: 960px) {
-    .side_fav_menu {
+    .side-button {
         display: flex;
         z-index: 4;
         top: 40px;
+    }
+    .side-button__title {
+        display: inline;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ABABAB;
     }
 }

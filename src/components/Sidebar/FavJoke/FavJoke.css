@@ -1,40 +1,42 @@
-@import "../../../../index.css";
 /*Rectangle with a joke*/
 
-.rectangle {
+.fav-joke {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
     margin-top: 20px;
-    background: #F8F8F8;
-    border-radius: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /*Favourite icon*/
 
-.favorite_joke {
+.fav-joke__unlike-btn {
     align-self: flex-end;
     border: none;
     cursor: pointer;
-    background-color: #F8F8F8;
+    background-color: #fff;
 }
 
-.favorite_icon {
+.fav-joke__unlike-btn-icon {
     color: #FF6767;
 }
 
 /*Joke*/
 
-.joke {
+.fav-joke__container {
     display: flex;
     margin-top: 10px;
-    background: #F8F8F8;
+    background: #fff;
     border-radius: 20px;
 }
 
 /*Comment icon*/
 
-.comment_circle {
+.fav-joke__comment-circle {
     display: flex;
     justify-content: center;
     flex: 0 0 40px;
@@ -42,10 +44,10 @@
     height: 40px;
     margin-right: 20px;
     border-radius: 50%;
-    background: white;
+    background: #F8F8F8;
 }
 
-.comment_icon {
+.fav-joke__comment-circle-icon {
     width: auto;
     height: 22px;
     margin-top: 25%;
@@ -54,13 +56,13 @@
 
 /*Joke content*/
 
-.joke_content {
+.fav-joke__content {
     width: 100%;
 }
 
 /*Joke ID*/
 
-.id {
+.fav-joke__id {
     color: #ABABAB;
     font-size: 10px;
     line-height: 14px;
@@ -68,10 +70,10 @@
 
 /*Joke link*/
 
-#link {
+#fav-joke__id-link {
     font-size: 10px;
     line-height: 14px;
-    background: url('../../../images/external-link.png') no-repeat 100% 0;
+    background: url('../../images/external-link.png') no-repeat 100% 0;
     background-size: 14px 14px;
     padding-right: 19px;
     color: #8EA7FF;
@@ -79,20 +81,19 @@
 
 /*Joke value*/
 
-.joke_value {
-    max-width: 540px;
+.fav-joke__value {
     margin-top: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-weight: normal;
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 /*Last update and Category*/
 
-.update_category {
+.fav-joke__apps {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -105,9 +106,8 @@
 
 /*Joke category*/
 
-.joke_category {
-    background: #FFFFFF;
-    border-radius: 6px;
+.fav-joke__apps-category {
+    background: #F8F8F8;
     padding: 5px 20px;
     margin-right: -2px;
     font-weight: 700;
@@ -118,26 +118,23 @@
     color: #333333;
 }
 
-.joke_category:empty {
+.fav-joke__apps-category:empty {
     display: none;
 }
 
-/*Joke mobile view*/
-
-@media (max-width: 1240px) {
-    .joke_category {
-        padding: 5px 10px;
-    }
-}
+/*FavJoke mobile view*/
 
 @media (max-width: 480px) {
-    .joke_value {
+    .fav-joke {
+        width: 100%;
+    }
+    .fav-joke__value {
         max-width: calc(100vw - 140px);
     }
 }
 
 @media (max-width: 320px) {
-    .joke_value {
+    .fav-joke__value {
         max-width: 180px;
         width: 100%;
     }

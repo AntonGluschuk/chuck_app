@@ -1,6 +1,3 @@
-@import "../../index.css";
-@import "../Content/JokeLogic/JokeLogic.css";
-
 /*SideBar*/
 
 .sidebar {
@@ -9,17 +6,23 @@
     background: #F8F8F8;
 }
 
-.favourite_jokes{
-    width: 100%;
+/*Need to fix*/
+
+.sidebar_height {
+    /*height: 100%;*/
 }
 
-/*SideBar Favourite heading*/
+/*SideBar Favourite heading and jokes*/
 
-.fav_title {
+.sidebar__title {
     display: inline;
     font-size: 20px;
     line-height: 28px;
     color: #ABABAB;
+}
+
+.sidebar__jokes{
+    width: 100%;
 }
 
 /*SideBar mobile view*/
@@ -32,14 +35,9 @@
         right: 0;
         z-index: 3;
     }
-    .fav_title {
+    .sidebar__title {
         visibility: hidden;
     }
-
-    .height {
-        height: 100%;
-    }
-
     .sidebar_active {
         display: block;
         width: 480px;

@@ -1,11 +1,10 @@
 import React, {useContext} from "react";
 import JokeLogic from "./JokeLogic/JokeLogic";
 import "./Content.css";
-import {JokeContext} from "../JokeContext";
-
-
+import {JokeContext} from "../JokeContext/JokeContext";
 
 function Content() {
+
     const {
         visibleSide
     } = useContext(JokeContext);

@@ -1,7 +1,6 @@
-@import "index.css";
 /*Main and SideBar*/
 
-.main_content {
+.app {
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
@@ -10,7 +9,7 @@
 /*Main and SideBar mobile view*/
 
 @media (max-width: 960px) {
-  .main_content {
+  .app {
     display: block;
     position: relative;
   }

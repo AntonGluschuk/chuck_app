@@ -1,7 +1,6 @@
 import React from "react";
-import "./CategoriesItself.css";
+import "./Categories.css";
 import styled from "styled-components";
-import "../../../../../../index.css"
 
 const Button = styled.button`
   color: #ABABAB;
@@ -45,16 +44,16 @@ const ButtonToggle = styled(Button)`
   `}
 `;
 
-function CategoriesItself({ categories, active, setActive }) {
+function Categories({ categories, active, setActive }) {
 
     const handleSubmit = e => {
         e.preventDefault();
     };
     return (
-        <form className="categories_list" onSubmit={handleSubmit}>
+        <form className="categories" onSubmit={handleSubmit}>
             {categories.map(category =>
                 <ButtonToggle
-                        className="category_btn"
+                        className="categories__btn"
                         value={category}
                         key={category}
                         active={active === category}
@@ -64,4 +63,4 @@ function CategoriesItself({ categories, active, setActive }) {
     );
 }
 
-export default CategoriesItself
+export default Categories

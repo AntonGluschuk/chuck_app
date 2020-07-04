@@ -2,9 +2,9 @@ import React from "react";
 
 function Search({ handleOptionChange, checked }) {
     return (
-        <div className="form-check">
+        <form className="joke-options__form">
             <input
-                className="form-check-input"
+                className="joke-options__form-input"
                 id="search"
                 type="radio"
                 name="react-tips"
@@ -12,8 +12,8 @@ function Search({ handleOptionChange, checked }) {
                 checked={checked === "option3"}
                 onChange={handleOptionChange}
             />
-            <label className="radio_label" htmlFor="search">Search</label>
-        </div>
+            <label className="joke-options__form-label" htmlFor="search">Search</label>
+        </form>
     );
 }
 

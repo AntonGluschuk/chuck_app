@@ -1,7 +1,6 @@
-@import "../../../../../../index.css";
 /*Category list*/
 
-.categories_list {
+.categories {
     display: flex;
     flex-wrap: wrap;
 }

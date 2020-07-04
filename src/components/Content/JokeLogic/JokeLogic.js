@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./JokeLogic.css";
-import JokeItself from "./JokeItself/JokeItself";
+import Joke from "./Joke/Joke";
 import JokeOptions from "./JokeOptions/JokeOptions";
 import JokeButton from "./JokeButton/JokeButton";
-import SideButton from "../../SideButton/SideButton";
-import { JokeContext } from "../../JokeContext";
+import SideButton from "../../Sidebar/SideButton/SideButton";
+import { JokeContext } from "../../JokeContext/JokeContext";
 
 function JokeLogic() {
+
     const {
         jokes,
         setJokes,
@@ -94,14 +95,14 @@ function JokeLogic() {
     };
 
     return (
-        <div className="joke_logic">
-            <div className="logo">
-                <div className="logo_title">MSI 2020</div>
+        <div className="joke-logic">
+            <div className="joke-logic__logo">
+                <div className="joke-logic__logo-title">MSI 2020</div>
                 <SideButton/>
             </div>
-            <div className="intro">
-                <div className="intro_title">Hey!</div>
-                <div className="intro_subtitle">Let's try to find a joke for you:</div>
+            <div className="joke-logic__intro">
+                <div className="joke-logic__intro-title">Hey!</div>
+                <div className="joke-logic__intro-subtitle">Let's try to find a joke for you:</div>
 
                 {/*Radio Buttons*/}
                 <JokeOptions
@@ -119,12 +120,12 @@ function JokeLogic() {
                 <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
             </div>
             {/*Loader*/}
-            {loading && <span className="joke_loader"> </span>}
+            {loading && <span className="joke-logic__loader"> </span>}
             {/*Jokes*/}
             {
                 jokes.map(joke => {
                     return (
-                        <JokeItself
+                        <Joke
                             value={joke.value}
                             id={joke.id}
                             category={joke.categories}

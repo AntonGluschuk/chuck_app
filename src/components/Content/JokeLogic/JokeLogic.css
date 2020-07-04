@@ -1,13 +1,12 @@
-@import "../../../index.css";
 /*Logo*/
 
-.logo {
+.joke-logic__logo {
     display: flex;
     justify-content: space-between;
     padding-bottom: 78px;
 }
 
-.logo_title {
+.joke-logic__logo-title {
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
@@ -15,13 +14,13 @@
 
 /*Intro*/
 
-.intro_title {
+.joke-logic__intro-title {
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
 }
 
-.intro_subtitle {
+.joke-logic__intro-subtitle {
     font-weight: 600;
     font-size: 24px;
     line-height: 44px;
@@ -30,7 +29,7 @@
 
 /*Loading spinner*/
 
-.joke_loader {
+.joke-logic__loader {
     position: absolute;
     top: calc(50vh - 40px);
     left: calc(50vw - 40px);
@@ -38,7 +37,7 @@
     height: 80px;
 }
 
-.joke_loader:after {
+.joke-logic__loader:after {
     content: " ";
     display: block;
     width: 64px;
@@ -53,7 +52,7 @@
     box-sizing: border-box;
 }
 
-@-webkit-keyframes joke_loader {
+@-webkit-keyframes joke-logic__loader {
     0% {
         transform: rotate(0deg);
     }
@@ -63,7 +62,7 @@
     }
 }
 
-@keyframes joke_loader {
+@keyframes joke-logic__loader {
     0% {
         transform: rotate(0deg);
     }
