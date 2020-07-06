@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import "./JokeLogic.css";
 import Joke from "./Joke/Joke";
 import JokeOptions from "./JokeOptions/JokeOptions";
@@ -26,11 +26,14 @@ function JokeLogic() {
         setValidSearchValue
     } = useContext(JokeContext);
 
-    const getCategories = async () => {
-        const response = await fetch('https://api.chucknorris.io/jokes/categories');
-        const data = await response.json();
-        setCategories(data);
-    };getCategories().catch(e => {console.log(e);});
+    useEffect(() => {
+        const getCategories = async () => {
+            const response = await fetch('https://api.chucknorris.io/jokes/categories');
+            const data = await response.json();
+            setCategories(data);
+        };
+        getCategories().catch((e) => console.log(e));
+    }, []);
 
     const getAJoke = async () => {
         setLoading(true);
@@ -89,9 +92,9 @@ function JokeLogic() {
       setFavJokes([favJoke, ...favJokes]);
     };
 
-    const randomSearchJoke = (jokess) =>  {
-        let randJ = Math.floor(Math.random() * jokess.length);
-      return jokess[randJ];
+    const randomSearchJoke = (jokes_r) =>  {
+        let randJ = Math.floor(Math.random() * jokes_r.length);
+      return jokes_r[randJ];
     };
 
     return (
