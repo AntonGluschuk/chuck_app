@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/msi2020/static/css/main.4352f886.chunk.css",
-    "main.js": "/msi2020/static/js/main.3f54d11f.chunk.js",
-    "main.js.map": "/msi2020/static/js/main.3f54d11f.chunk.js.map",
+    "main.css": "/msi2020/static/css/main.aa43d857.chunk.css",
+    "main.js": "/msi2020/static/js/main.7ce2a076.chunk.js",
+    "main.js.map": "/msi2020/static/js/main.7ce2a076.chunk.js.map",
     "runtime-main.js": "/msi2020/static/js/runtime-main.567c60bb.js",
     "runtime-main.js.map": "/msi2020/static/js/runtime-main.567c60bb.js.map",
     "static/js/2.4b61db5d.chunk.js": "/msi2020/static/js/2.4b61db5d.chunk.js",
     "static/js/2.4b61db5d.chunk.js.map": "/msi2020/static/js/2.4b61db5d.chunk.js.map",
     "index.html": "/msi2020/index.html",
-    "precache-manifest.26e446f6e03b27b8077976babbacd52c.js": "/msi2020/precache-manifest.26e446f6e03b27b8077976babbacd52c.js",
+    "precache-manifest.2c85adfc6e7918175a8cc799e25b86e2.js": "/msi2020/precache-manifest.2c85adfc6e7918175a8cc799e25b86e2.js",
     "service-worker.js": "/msi2020/service-worker.js",
-    "static/css/main.4352f886.chunk.css.map": "/msi2020/static/css/main.4352f886.chunk.css.map",
+    "static/css/main.aa43d857.chunk.css.map": "/msi2020/static/css/main.aa43d857.chunk.css.map",
     "static/js/2.4b61db5d.chunk.js.LICENSE.txt": "/msi2020/static/js/2.4b61db5d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.567c60bb.js",
     "static/js/2.4b61db5d.chunk.js",
-    "static/css/main.4352f886.chunk.css",
-    "static/js/main.3f54d11f.chunk.js"
+    "static/css/main.aa43d857.chunk.css",
+    "static/js/main.7ce2a076.chunk.js"
   ]
 }
