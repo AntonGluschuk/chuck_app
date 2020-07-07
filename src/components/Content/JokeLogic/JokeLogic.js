@@ -27,11 +27,11 @@ function JokeLogic() {
     } = useContext(JokeContext);
 
     useEffect(() => {
-        const getCategories = async () => {
+       async function getCategories() {
             const response = await fetch('https://api.chucknorris.io/jokes/categories');
             const data = await response.json();
             setCategories(data);
-        };
+        }
         getCategories().catch((e) => console.log(e));
     }, []);
 
@@ -126,7 +126,7 @@ function JokeLogic() {
             {loading && <span className="joke-logic__loader"> </span>}
             {/*Jokes*/}
             {
-                jokes.map(joke => {
+                jokes.map((joke, index) => {
                     return (
                         <Joke
                             value={joke.value}
@@ -134,7 +134,7 @@ function JokeLogic() {
                             category={joke.categories}
                             updated_at={joke.updated_at}
                             likeJoke={likeJoke}
-                            key={joke.id}
+                            key={index}
                         />
                     )
                 })

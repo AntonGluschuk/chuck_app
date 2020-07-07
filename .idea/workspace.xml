@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
     </list>
@@ -146,7 +143,8 @@
       <workItem from="1593182215823" duration="7292000" />
       <workItem from="1593254350344" duration="9945000" />
       <workItem from="1593857729791" duration="13328000" />
-      <workItem from="1594053484013" duration="4140000" />
+      <workItem from="1594053484013" duration="4434000" />
+      <workItem from="1594131932289" duration="6192000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -358,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593877452372</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="20:53 06/07/20 fix fetch categories of joke">
+      <created>1594058066676</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1594058066677</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +384,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="12:04 08/05/20 fixed comments" />
     <MESSAGE value="20:14 08/05/20 make JokeOptions component, change project structure" />
     <MESSAGE value="21:17 09/05/20 fix render by clicking button Get a Joke" />
     <MESSAGE value="20:38 11/05/20 implement FromCategories/Search, clear bugs" />
@@ -404,6 +408,7 @@
     <MESSAGE value="22:27 25/06/20 added loader spinner, remove unnecessary useEffect hook" />
     <MESSAGE value="19:36 26/06/20 render jokes as a list, also fixed paddings on sidebar in mobile view" />
     <MESSAGE value="18:43 04/07/20 fix BEM names, clear redundant" />
-    <option name="LAST_COMMIT_MESSAGE" value="18:43 04/07/20 fix BEM names, clear redundant" />
+    <MESSAGE value="20:53 06/07/20 fix fetch categories of joke" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:53 06/07/20 fix fetch categories of joke" />
   </component>
 </project>

@@ -1,6 +1,16 @@
 /*SideBar*/
 
+/*Need to fix*/
+
 .sidebar {
+    /*position: fixed;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*width: 480px;*/
+    /*height: 100%;*/
+    /*overflow-y: auto;*/
     flex: 0 0 480px;
     padding: 40px;
     background: #F8F8F8;
@@ -9,7 +19,7 @@
 /*Need to fix*/
 
 .sidebar_height {
-    /*height: 100%;*/
+    min-height: 100vh;
 }
 
 /*SideBar Favourite heading and jokes*/
@@ -44,6 +54,10 @@
         min-height: 100vh;
         box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
     }
+    .sidebar_height {
+        min-height: 100vh;
+    }
+
 }
 
 @media (max-width: 480px) {
