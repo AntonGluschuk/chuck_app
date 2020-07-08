@@ -13,13 +13,16 @@
 
 .joke__like-btn {
     align-self: flex-end;
+    background: url("../../../images/heart-empty-icon.svg");
+    transition: .3s;
+    width: 20px;
+    height: 17px;
     border: none;
     cursor: pointer;
-    background-color: #F8F8F8;
 }
 
-.joke__like-btn-icon {
-    color: #FF6767;
+.joke__like-btn:hover {
+    background: url("../../../images/heart-full-icon.svg");
 }
 
 /*Joke*/
@@ -34,6 +37,7 @@
 /*Comment icon*/
 
 .joke__comment-circle {
+    background: url("../../../images/message-icon.svg") no-repeat center center #fff;
     display: flex;
     justify-content: center;
     flex: 0 0 40px;
@@ -41,14 +45,6 @@
     height: 40px;
     margin-right: 20px;
     border-radius: 50%;
-    background: white;
-}
-
-.joke__comment-circle-icon {
-    width: auto;
-    height: 22px;
-    margin-top: 25%;
-    color: #ABABAB;
 }
 
 /*Joke content*/
@@ -68,11 +64,9 @@
 /*Joke link*/
 
 #joke__id-link {
-    font-size: 10px;
-    line-height: 14px;
-    background: url('../../../images/external-link.png') no-repeat 100% 0;
-    background-size: 14px 14px;
-    padding-right: 19px;
+    background: url('../../../images/link-icon.svg') no-repeat 100% 0;
+    text-decoration: underline;
+    padding-right: 15px;
     color: #8EA7FF;
 }
 
@@ -87,6 +81,7 @@
     padding-bottom: 10px;
     font-size: 18px;
     line-height: 26px;
+    overflow-wrap: break-word;
 }
 
 /*Last update and Category*/
@@ -123,15 +118,12 @@
 
 /*Joke mobile view*/
 
-@media (max-width: 1240px) {
-    .joke__apps-category {
-        padding: 5px 10px;
-    }
-}
-
 @media (max-width: 480px) {
     .joke__value {
         max-width: calc(100vw - 140px);
+    }
+    .joke__apps-category {
+        margin-top: 5px;
     }
 }
 

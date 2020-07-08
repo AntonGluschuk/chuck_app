@@ -9,12 +9,14 @@ function Sidebar() {
     const {
         favJokes,
         setFavJokes,
+        setSavedJoke,
         visibleSide
     } = useContext(JokeContext);
 
     const unlikeJoke = (id) => {
         const newLikedJokes = favJokes.filter((joke) => joke.id !== id);
         setFavJokes(newLikedJokes);
+        setSavedJoke(false);
     };
 
     /*Change className for aside*/

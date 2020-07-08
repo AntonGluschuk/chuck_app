@@ -16,13 +16,12 @@
 
 .fav-joke__unlike-btn {
     align-self: flex-end;
+    background: url("../../images/heart-full-icon.svg");
+    transition: .3s;
+    width: 20px;
+    height: 17px;
     border: none;
     cursor: pointer;
-    background-color: #fff;
-}
-
-.fav-joke__unlike-btn-icon {
-    color: #FF6767;
 }
 
 /*Joke*/
@@ -37,6 +36,7 @@
 /*Comment icon*/
 
 .fav-joke__comment-circle {
+    background: url("../../images/message-icon.svg") no-repeat center center #F8F8F8;
     display: flex;
     justify-content: center;
     flex: 0 0 40px;
@@ -44,14 +44,6 @@
     height: 40px;
     margin-right: 20px;
     border-radius: 50%;
-    background: #F8F8F8;
-}
-
-.fav-joke__comment-circle-icon {
-    width: auto;
-    height: 22px;
-    margin-top: 25%;
-    color: #ABABAB;
 }
 
 /*Joke content*/
@@ -71,11 +63,9 @@
 /*Joke link*/
 
 #fav-joke__id-link {
-    font-size: 10px;
-    line-height: 14px;
-    background: url('../../images/external-link.png') no-repeat 100% 0;
-    background-size: 14px 14px;
-    padding-right: 19px;
+    background: url('../../images/link-icon.svg') no-repeat 100% 0;
+    text-decoration: underline;
+    padding-right: 15px;
     color: #8EA7FF;
 }
 
@@ -89,6 +79,7 @@
     padding-bottom: 10px;
     font-size: 14px;
     line-height: 20px;
+    overflow-wrap: break-word;
 }
 
 /*Last update and Category*/
@@ -130,6 +121,9 @@
     }
     .fav-joke__value {
         max-width: calc(100vw - 140px);
+    }
+    .fav-joke__apps-category {
+        margin-top: 5px;
     }
 }
 

@@ -13,6 +13,8 @@ function JokeLogic() {
         setJokes,
         favJokes,
         setFavJokes,
+        savedJoke,
+        setSavedJoke,
         selected,
         setSelected,
         loading,
@@ -88,8 +90,11 @@ function JokeLogic() {
       if (favJokes.find(joke => joke.id === id)) return;
 
       favJoke = jokes.find(joke => joke.id === id);
-
+      // if(jokes.find(joke => joke.id === id)) {
+      //     setSavedJoke(true);
+      // }
       setFavJokes([favJoke, ...favJokes]);
+      setSavedJoke(true);
     };
 
     const randomSearchJoke = (jokes_r) =>  {
@@ -134,6 +139,7 @@ function JokeLogic() {
                             category={joke.categories}
                             updated_at={joke.updated_at}
                             likeJoke={likeJoke}
+                            savedJoke={savedJoke}
                             key={index}
                         />
                     )

@@ -6,6 +6,7 @@ export const JokeProvider = (props) => {
     const initialFavJoke = () => (JSON.parse(localStorage.getItem('favourite_jokes')) || []);
     const [jokes, setJokes] = useState([]);
     const [favJokes, setFavJokes] = useState(initialFavJoke);
+    const [savedJoke, setSavedJoke] = useState(false);
     const [selected, setSelected] = useState("option1");
     const [loading, setLoading] = useState(false);
     const [categories, setCategories] = useState([]);
@@ -20,6 +21,8 @@ export const JokeProvider = (props) => {
         setJokes,
         favJokes,
         setFavJokes,
+        savedJoke,
+        setSavedJoke,
         selected,
         setSelected,
         loading,
