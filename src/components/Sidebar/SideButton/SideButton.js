@@ -17,15 +17,18 @@ function SideButton() {
         }
     };
 
-    let changeIcon;
-    if(!visibleSide) {
-        changeIcon = "";
-    } else {
-        changeIcon = "side-button_active";
-    }
+    /*Change className for div side-button*/
+    const changeSidebarIcon = (changeIcon) => {
+        if(!visibleSide) {
+            changeIcon = "";
+        } else {
+            changeIcon = "side-button_active";
+        }
+        return changeIcon;
+    };
 
     return (
-        <div className={`side-button ${changeIcon}`} onClick={() => openSideBar()}>
+        <div className={`side-button ${changeSidebarIcon()}`} onClick={() => openSideBar()}>
             <div className="side-button__icon">
                 <span className="side-button__icon-line first-line">
                 </span>

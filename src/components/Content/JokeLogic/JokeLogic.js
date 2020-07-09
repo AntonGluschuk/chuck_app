@@ -34,7 +34,7 @@ function JokeLogic() {
             const data = await response.json();
             setCategories(data);
         }
-        getCategories().catch((e) => console.log(e));
+        getCategories().catch((e) => alert(e));
     }, []);
 
     const getAJoke = async () => {
@@ -87,14 +87,12 @@ function JokeLogic() {
 
     const likeJoke = (id) => {
         let favJoke;
-      if (favJokes.find(joke => joke.id === id)) return;
+        setSavedJoke(true);
+        if (favJokes.find(joke => joke.id === id)) return;
 
-      favJoke = jokes.find(joke => joke.id === id);
-      // if(jokes.find(joke => joke.id === id)) {
-      //     setSavedJoke(true);
-      // }
-      setFavJokes([favJoke, ...favJokes]);
-      setSavedJoke(true);
+        favJoke = jokes.find(joke => joke.id === id);
+
+        setFavJokes([favJoke, ...favJokes]);
     };
 
     const randomSearchJoke = (jokes_r) =>  {

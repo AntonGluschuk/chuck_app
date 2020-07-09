@@ -3,7 +3,6 @@ import "./Sidebar.css";
 import { JokeContext } from "../JokeContext/JokeContext";
 import FavJoke from "./FavJoke/FavJoke";
 
-
 function Sidebar() {
 
     const {
@@ -19,20 +18,22 @@ function Sidebar() {
         setSavedJoke(false);
     };
 
-    /*Change className for aside*/
-    let openSide;
-    if(!visibleSide) {
-        openSide = "";
-    } else {
-        openSide = "sidebar_active";
-    }
+    /*Change className for aside sidebar*/
+    const openSide = (opS) => {
+        if(!visibleSide) {
+            opS = "";
+        } else {
+            opS = "sidebar_active";
+        }
+        return opS;
+    };
 
     return (
-        <aside className={`sidebar sidebar_height ${openSide}`}>
+        <aside className={`sidebar ${openSide()}`}>
             <div className="sidebar__title">Favourite</div>
             <div className="sidebar__jokes">
             {
-                favJokes.map(joke => {
+                favJokes.map((joke, index) => {
                     return (
                         <FavJoke
                             value={joke.value}
@@ -40,7 +41,7 @@ function Sidebar() {
                             category={joke.categories}
                             updated_at={joke.updated_at}
                             unlikeJoke={unlikeJoke}
-                            key={joke.id}
+                            key={index}
                         />
                     )
                 })

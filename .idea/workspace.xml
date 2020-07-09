@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/images/heart-empty-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/heart-full-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/link-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/images/message-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/Vector.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/Vector.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/comment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/comment.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/equal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/external-link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/heart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/images/multiply.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +150,8 @@
       <workItem from="1593857729791" duration="13328000" />
       <workItem from="1594053484013" duration="4434000" />
       <workItem from="1594131932289" duration="6290000" />
-      <workItem from="1594224053078" duration="9162000" />
+      <workItem from="1594224053078" duration="9500000" />
+      <workItem from="1594312022549" duration="7372000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -392,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594142077612</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="21:36 08/07/20 fix icon bugs">
+      <created>1594233441252</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1594233441252</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +405,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="21:17 09/05/20 fix render by clicking button Get a Joke" />
     <MESSAGE value="20:38 11/05/20 implement FromCategories/Search, clear bugs" />
     <MESSAGE value="21:24 14/05/20 finished content, start sidebar" />
     <MESSAGE value="21:24 14/05/20 finished content, working on sidebar" />
@@ -438,6 +429,7 @@
     <MESSAGE value="18:43 04/07/20 fix BEM names, clear redundant" />
     <MESSAGE value="20:53 06/07/20 fix fetch categories of joke" />
     <MESSAGE value="20:14 07/07/20 fix useEffect hook bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:14 07/07/20 fix useEffect hook bug" />
+    <MESSAGE value="21:36 08/07/20 fix icon bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="21:36 08/07/20 fix icon bugs" />
   </component>
 </project>

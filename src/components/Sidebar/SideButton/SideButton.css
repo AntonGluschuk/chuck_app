@@ -4,6 +4,10 @@
     display: none;
 }
 
+.side-button__title {
+    display: none;
+}
+
 .side-button__icon {
     cursor: pointer;
     margin-right: 10px;
@@ -43,10 +47,6 @@
     bottom: 13px;
     transition: 0.1s;
     transform: rotate(-45deg);
-}
-
-.side-button__title {
-    display: none;
 }
 
 /*Mobile view*/

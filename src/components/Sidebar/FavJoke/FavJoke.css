@@ -10,6 +10,16 @@
     border: 1px solid #F8F8F8;
     box-sizing: border-box;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideLeft .3s ease;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(130%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /*Favourite icon*/

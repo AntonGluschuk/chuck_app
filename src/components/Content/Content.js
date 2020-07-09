@@ -9,15 +9,18 @@ function Content() {
         visibleSide
     } = useContext(JokeContext);
 
-    let closeContent;
-    if(!visibleSide) {
-        closeContent = "";
-    } else {
-        closeContent = "content_deactivate";
-    }
+    /*Change className for div content*/
+    const deactivateContent = (closeContent) => {
+        if(!visibleSide) {
+            closeContent = "";
+        } else {
+            closeContent = "content_deactivate";
+        }
+        return closeContent;
+    };
 
     return (
-        <div className={`content ${closeContent}`}>
+        <div className={`content ${deactivateContent()}`}>
             <JokeLogic />
         </div>
     )
