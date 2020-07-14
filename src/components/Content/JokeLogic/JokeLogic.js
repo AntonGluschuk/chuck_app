@@ -137,7 +137,6 @@ function JokeLogic() {
                             category={joke.categories}
                             updated_at={joke.updated_at}
                             likeJoke={likeJoke}
-                            savedJoke={savedJoke}
                             key={index}
                         />
                     )

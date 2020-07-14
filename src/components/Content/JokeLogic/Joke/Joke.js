@@ -1,19 +1,13 @@
 import React from "react";
 import "./Joke.css";
 
-function Joke({ id, value, category, updated_at, likeJoke, savedJoke }) {
+
+function Joke({ id, value, category, updated_at, likeJoke }) {
 
     const calculateHours = (date) => {
         return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
     };
-    // const setFavJokeIcon = (e, classButton) => {
-    //     if(e.target.value) {
-    //         classButton = "fav-joke__unlike-btn";
-    //     } else {
-    //         classButton = "joke__like-btn";
-    //     }
-    //     return classButton;
-    // };
+
     return (<div>{ value ?
         <div className="joke">
             <button title="Add to Favourites" className="joke__like-btn" onClick={() => likeJoke(id)}> </button>
