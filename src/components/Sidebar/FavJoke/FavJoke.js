@@ -1,5 +1,6 @@
 import React from "react";
 import "./FavJoke.css";
+import UnlikeJokeButton from "./UnlikeJokeButton/UnlikeJokeButton";
 
 function FavJoke({ id, value, category, updated_at, unlikeJoke }) {
 
@@ -9,7 +10,7 @@ function FavJoke({ id, value, category, updated_at, unlikeJoke }) {
 
     return (<div>{ value ?
         <div className="fav-joke">
-            <button title="Remove from Favourites" className="fav-joke__unlike-btn" onClick={() => unlikeJoke(id)}> </button>
+            <UnlikeJokeButton id={id} unlikeJoke={unlikeJoke} />
             <div className="fav-joke__container">
                 <div className="fav-joke__comment-circle"> </div>
                 <div className="fav-joke__content">

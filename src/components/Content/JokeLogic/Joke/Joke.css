@@ -9,22 +9,6 @@
     border-radius: 20px;
 }
 
-/*Favourite icon*/
-
-.joke__like-btn {
-    align-self: flex-end;
-    background: url("../../../images/heart-empty-icon.svg");
-    transition: .3s;
-    width: 20px;
-    height: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.joke__like-btn:hover {
-    background: url("../../../images/heart-full-icon.svg");
-}
-
 /*Joke*/
 
 .joke__container {

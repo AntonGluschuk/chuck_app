@@ -1,8 +1,10 @@
 import React from "react";
 import "./Joke.css";
+import LikeJokeButton from "./LikeJokeButton/LikeJokeButton";
+import UnlikeJokeButton from "../../../Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton";
 
 
-function Joke({ id, value, category, updated_at, likeJoke }) {
+function Joke({ jokeIsF, id, value, category, updated_at, likeJoke, unlikeJoke }) {
 
     const calculateHours = (date) => {
         return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
@@ -10,7 +12,11 @@ function Joke({ id, value, category, updated_at, likeJoke }) {
 
     return (<div>{ value ?
         <div className="joke">
-            <button title="Add to Favourites" className="joke__like-btn" onClick={() => likeJoke(id)}> </button>
+            {jokeIsF ?
+                <UnlikeJokeButton id={id} unlikeJoke={unlikeJoke} />
+                :
+                <LikeJokeButton id={id} likeJoke={likeJoke} />
+            }
             <div className="joke__container">
                 <div className="joke__comment-circle"> </div>
                 <div className="joke__content">

@@ -6,16 +6,16 @@ import FavJoke from "./FavJoke/FavJoke";
 function Sidebar() {
 
     const {
+        setJokes,
         favJokes,
         setFavJokes,
-        setSavedJoke,
         visibleSide
     } = useContext(JokeContext);
 
     const unlikeJoke = (id) => {
-        const newLikedJokes = favJokes.filter((joke) => joke.id !== id);
+        const newLikedJokes = favJokes.filter(joke => joke.id !== id);
         setFavJokes(newLikedJokes);
-        setSavedJoke(false);
+        setJokes(jokes => jokes.map(item => item.id === id ? {...item, isFavourite: false} : item));
     };
 
     /*Change className for aside sidebar*/
@@ -33,13 +33,13 @@ function Sidebar() {
             <div className="sidebar__title">Favourite</div>
             <div className="sidebar__jokes">
             {
-                favJokes.map((joke, index) => {
+                favJokes.map((favJoke, index) => {
                     return (
                         <FavJoke
-                            value={joke.value}
-                            id={joke.id}
-                            category={joke.categories}
-                            updated_at={joke.updated_at}
+                            value={favJoke.value}
+                            id={favJoke.id}
+                            category={favJoke.categories}
+                            updated_at={favJoke.updated_at}
                             unlikeJoke={unlikeJoke}
                             key={index}
                         />

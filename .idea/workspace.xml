@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -150,7 +157,8 @@
       <workItem from="1594224053078" duration="9500000" />
       <workItem from="1594312022549" duration="7537000" />
       <workItem from="1594404784830" duration="2721000" />
-      <workItem from="1594748330213" duration="1665000" />
+      <workItem from="1594748330213" duration="1765000" />
+      <workItem from="1594835249467" duration="3618000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -390,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594319501651</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="21:08 14/07/20 fix overlap text bug in sidebar">
+      <created>1594750163272</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1594750163272</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,8 +426,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="21:24 14/05/20 finished content, start sidebar" />
-    <MESSAGE value="21:24 14/05/20 finished content, working on sidebar" />
     <MESSAGE value="21:13 15/05/20 refactor joke id link and category render" />
     <MESSAGE value="20:29 16/05/20 implement context API, finished favourites" />
     <MESSAGE value="20:31 16/05/20 removed redundant" />
@@ -436,6 +449,8 @@
     <MESSAGE value="20:14 07/07/20 fix useEffect hook bug" />
     <MESSAGE value="21:36 08/07/20 fix icon bugs" />
     <MESSAGE value="21:30 09/07/20 added animations, working on saving liked jokes in search results" />
-    <option name="LAST_COMMIT_MESSAGE" value="21:30 09/07/20 added animations, working on saving liked jokes in search results" />
+    <MESSAGE value="21:08 14/07/20 fix overlap text bug in sidebar" />
+    <MESSAGE value="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components" />
+    <option name="LAST_COMMIT_MESSAGE" value="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components" />
   </component>
 </project>

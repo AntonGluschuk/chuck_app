@@ -22,18 +22,6 @@
     }
 }
 
-/*Favourite icon*/
-
-.fav-joke__unlike-btn {
-    align-self: flex-end;
-    background: url("../../images/heart-full-icon.svg");
-    transition: .3s;
-    width: 20px;
-    height: 17px;
-    border: none;
-    cursor: pointer;
-}
-
 /*Joke*/
 
 .fav-joke__container {
