@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components">
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.js" afterDir="false" />
+    <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +153,9 @@
       <workItem from="1594312022549" duration="7537000" />
       <workItem from="1594404784830" duration="2721000" />
       <workItem from="1594748330213" duration="1765000" />
-      <workItem from="1594835249467" duration="3618000" />
+      <workItem from="1594835249467" duration="3738000" />
+      <workItem from="1595090989087" duration="4798000" />
+      <workItem from="1595250623211" duration="7088000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -405,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594750163272</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components">
+      <created>1594838919741</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1594838919741</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

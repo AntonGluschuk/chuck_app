@@ -11,6 +11,8 @@ function JokeLogic() {
     const {
         jokes,
         setJokes,
+        handledJokes,
+        setHandledJokes,
         favJokes,
         setFavJokes,
         selected,
@@ -47,6 +49,7 @@ function JokeLogic() {
             const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${active}`);
             const data = await response.json();
             setJokes([data, ...jokes]);
+            // setHandledJokes([data, ...handledJokes]);
             setLoading(false);
         }
         else if(selected === "option3") {
@@ -55,6 +58,7 @@ function JokeLogic() {
             const singleJoke = randomSearchJoke(data.result);
             checkValidQuery(singleJoke);
         }
+        handleJokeDuplicates();
     };
 
     const checkValidQuery = (singleJ) => {
@@ -105,6 +109,16 @@ function JokeLogic() {
       return jokes_r[randJ];
     };
 
+    const handleJokeDuplicates = () => {
+        const jokesDiff = jokes.filter(joke => {
+           const isSomeInHandledJokes = handledJokes.some(hJoke => {
+               return joke.id === hJoke.id;
+           });
+           return !isSomeInHandledJokes;
+        });
+        setHandledJokes([...jokesDiff, ...handledJokes]);
+    };
+
     return (
         <div className="joke-logic">
             <div className="joke-logic__logo">
@@ -134,17 +148,17 @@ function JokeLogic() {
             {loading && <span className="joke-logic__loader"> </span>}
             {/*Jokes*/}
             {
-                jokes.map((joke, index) => {
+                handledJokes.map(hJoke => {
                     return (
                         <Joke
-                            value={joke.value}
-                            id={joke.id}
-                            category={joke.categories}
-                            updated_at={joke.updated_at}
+                            value={hJoke.value}
+                            id={hJoke.id}
+                            category={hJoke.categories}
+                            updated_at={hJoke.updated_at}
                             likeJoke={likeJoke}
                             unlikeJoke={unlikeJoke}
-                            jokeIsF={joke.isFavourite}
-                            key={index}
+                            jokeIsF={hJoke.isFavourite}
+                            key={hJoke.id}
                         />
                     )
                 })

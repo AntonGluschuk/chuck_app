@@ -103,7 +103,7 @@
 
 @media (max-width: 480px) {
     .joke__value {
-        max-width: calc(100vw - 140px);
+        width: 100%;
     }
     .joke__apps-category {
         margin-top: 5px;
