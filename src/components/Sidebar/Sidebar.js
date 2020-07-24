@@ -33,7 +33,7 @@ function Sidebar() {
             <div className="sidebar__title">Favourite</div>
             <div className="sidebar__jokes">
             {
-                favJokes.map((favJoke, index) => {
+                favJokes.map(favJoke => {
                     return (
                         <FavJoke
                             value={favJoke.value}
@@ -41,7 +41,7 @@ function Sidebar() {
                             category={favJoke.categories}
                             updated_at={favJoke.updated_at}
                             unlikeJoke={unlikeJoke}
-                            key={index}
+                            key={favJoke.id}
                         />
                     )
                 })

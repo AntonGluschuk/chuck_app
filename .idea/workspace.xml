@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,9 @@
       <workItem from="1594748330213" duration="1765000" />
       <workItem from="1594835249467" duration="3738000" />
       <workItem from="1595090989087" duration="4798000" />
-      <workItem from="1595250623211" duration="7088000" />
+      <workItem from="1595250623211" duration="7373000" />
+      <workItem from="1595351012159" duration="5441000" />
+      <workItem from="1595578630601" duration="6225000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -409,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594838919741</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="20:50 20/07/20 exclude duplicate jokes, this feature still in working">
+      <created>1595267486334</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1595267486334</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +438,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="21:13 15/05/20 refactor joke id link and category render" />
     <MESSAGE value="20:29 16/05/20 implement context API, finished favourites" />
     <MESSAGE value="20:31 16/05/20 removed redundant" />
     <MESSAGE value="23:40 18/05/20 implement localStorage and made few fixes" />
@@ -455,6 +462,7 @@
     <MESSAGE value="21:30 09/07/20 added animations, working on saving liked jokes in search results" />
     <MESSAGE value="21:08 14/07/20 fix overlap text bug in sidebar" />
     <MESSAGE value="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components" />
-    <option name="LAST_COMMIT_MESSAGE" value="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components" />
+    <MESSAGE value="20:50 20/07/20 exclude duplicate jokes, this feature still in working" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:50 20/07/20 exclude duplicate jokes, this feature still in working" />
   </component>
 </project>

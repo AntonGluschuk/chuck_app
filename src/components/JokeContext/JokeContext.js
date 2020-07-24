@@ -5,7 +5,6 @@ export const JokeContext = createContext();
 export const JokeProvider = (props) => {
     const initialFavJoke = () => (JSON.parse(localStorage.getItem('favourite_jokes')) || []);
     const [jokes, setJokes] = useState([]);
-    const [handledJokes, setHandledJokes] = useState([]);
     const [favJokes, setFavJokes] = useState(initialFavJoke);
     const [savedJoke, setSavedJoke] = useState(false);
     const [selected, setSelected] = useState("option1");
@@ -20,8 +19,6 @@ export const JokeProvider = (props) => {
     const providerValue = {
         jokes,
         setJokes,
-        handledJokes,
-        setHandledJokes,
         favJokes,
         setFavJokes,
         savedJoke,

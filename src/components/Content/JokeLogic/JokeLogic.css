@@ -46,8 +46,6 @@
     border-radius: 50%;
     border: 6px solid;
     border-color: #FF6767 transparent #FF6767 transparent;
-    -webkit-animation: joke-logic__loader 1.2s linear infinite;
-    -moz-animation: joke-logic__loader 1.2s linear infinite;
     animation: joke-logic__loader 1.2s linear infinite;
     box-sizing: border-box;
 }

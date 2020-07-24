@@ -4,15 +4,13 @@ import Joke from "./Joke/Joke";
 import JokeOptions from "./JokeOptions/JokeOptions";
 import JokeButton from "./JokeButton/JokeButton";
 import SideButton from "../../Sidebar/SideButton/SideButton";
-import { JokeContext } from "../../JokeContext/JokeContext";
+import {JokeContext} from "../../JokeContext/JokeContext";
 
 function JokeLogic() {
 
     const {
         jokes,
         setJokes,
-        handledJokes,
-        setHandledJokes,
         favJokes,
         setFavJokes,
         selected,
@@ -42,14 +40,13 @@ function JokeLogic() {
         if(selected === "option1") {
             const response = await fetch('https://api.chucknorris.io/jokes/random');
             const data = await response.json();
-            setJokes([data, ...jokes]);
+            getUnique(jokes, data);
             setLoading(false);
         }
         else if(selected === "option2") {
             const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${active}`);
             const data = await response.json();
-            setJokes([data, ...jokes]);
-            // setHandledJokes([data, ...handledJokes]);
+            getUnique(jokes, data);
             setLoading(false);
         }
         else if(selected === "option3") {
@@ -58,7 +55,6 @@ function JokeLogic() {
             const singleJoke = randomSearchJoke(data.result);
             checkValidQuery(singleJoke);
         }
-        handleJokeDuplicates();
     };
 
     const checkValidQuery = (singleJ) => {
@@ -67,7 +63,7 @@ function JokeLogic() {
             setValidSearchValue(false);
             setLoading(false);
         } else {
-            setJokes([singleJ, ...jokes]);
+            getUnique(jokes, singleJ);
             setValidSearchValue(true);
             setQuery("");
             setLoading(false);
@@ -108,17 +104,13 @@ function JokeLogic() {
         let randJ = Math.floor(Math.random() * jokes_r.length);
       return jokes_r[randJ];
     };
-
-    const handleJokeDuplicates = () => {
-        const jokesDiff = jokes.filter(joke => {
-           const isSomeInHandledJokes = handledJokes.some(hJoke => {
-               return joke.id === hJoke.id;
-           });
-           return !isSomeInHandledJokes;
-        });
-        setHandledJokes([...jokesDiff, ...handledJokes]);
+    const getUnique = (jokes, data) => {
+        if (jokes.find(joke => joke.id === data.id)) {
+           return null;
+        } else {
+            setJokes([data, ...jokes]);
+        }
     };
-
     return (
         <div className="joke-logic">
             <div className="joke-logic__logo">
@@ -148,17 +140,17 @@ function JokeLogic() {
             {loading && <span className="joke-logic__loader"> </span>}
             {/*Jokes*/}
             {
-                handledJokes.map(hJoke => {
+                jokes.map(joke => {
                     return (
                         <Joke
-                            value={hJoke.value}
-                            id={hJoke.id}
-                            category={hJoke.categories}
-                            updated_at={hJoke.updated_at}
+                            value={joke.value}
+                            id={joke.id}
+                            category={joke.categories}
+                            updated_at={joke.updated_at}
                             likeJoke={likeJoke}
                             unlikeJoke={unlikeJoke}
-                            jokeIsF={hJoke.isFavourite}
-                            key={hJoke.id}
+                            jokeIsF={joke.isFavourite}
+                            key={joke.id}
                         />
                     )
                 })
