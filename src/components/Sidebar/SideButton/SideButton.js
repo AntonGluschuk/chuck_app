@@ -8,7 +8,7 @@ function SideButton() {
         setVisibleSide
     } = useContext(JokeContext);
 
-
+    /*Opening sidebar after click on side-button */
     const openSideBar = () => {
         if(!visibleSide) {
             setVisibleSide(true);
@@ -17,7 +17,7 @@ function SideButton() {
         }
     };
 
-    /*Change className for div side-button*/
+    /*Change className for div "side-button" tag*/
     const changeSidebarIcon = (changeIcon) => {
         if(!visibleSide) {
             changeIcon = "";

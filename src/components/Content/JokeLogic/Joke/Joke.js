@@ -1,21 +1,22 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Joke.css";
 import LikeJokeButton from "./LikeJokeButton/LikeJokeButton";
 import UnlikeJokeButton from "../../../Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton";
+import {JokeContext} from "../../../JokeContext/JokeContext";
 
 
-function Joke({ jokeIsF, id, value, category, updated_at, likeJoke, unlikeJoke }) {
+function Joke({ value, id, category, updated_at, jokeIsF }) {
 
-    const calculateHours = (date) => {
-        return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
-    };
+    const {
+        calculateHours
+    } = useContext(JokeContext);
 
     return (<div>{ value ?
         <div className="joke">
             {jokeIsF ?
-                <UnlikeJokeButton id={id} unlikeJoke={unlikeJoke} />
+                <UnlikeJokeButton id={id} />
                 :
-                <LikeJokeButton id={id} likeJoke={likeJoke} />
+                <LikeJokeButton id={id} />
             }
             <div className="joke__container">
                 <div className="joke__comment-circle"> </div>

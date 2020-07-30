@@ -1,16 +1,17 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./FavJoke.css";
 import UnlikeJokeButton from "./UnlikeJokeButton/UnlikeJokeButton";
+import {JokeContext} from "../../JokeContext/JokeContext";
 
-function FavJoke({ id, value, category, updated_at, unlikeJoke }) {
+function FavJoke({ value, id, category, updated_at }) {
 
-    const calculateHours = (date) => {
-        return Math.floor((new Date() - new Date(date)) / 1000 / 60 / 60);
-    };
+    const {
+        calculateHours
+    } = useContext(JokeContext);
 
     return (<div>{ value ?
         <div className="fav-joke">
-            <UnlikeJokeButton id={id} unlikeJoke={unlikeJoke} />
+            <UnlikeJokeButton id={id} />
             <div className="fav-joke__container">
                 <div className="fav-joke__comment-circle"> </div>
                 <div className="fav-joke__content">

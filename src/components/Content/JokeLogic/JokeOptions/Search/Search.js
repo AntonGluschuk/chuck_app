@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
+import {JokeContext} from "../../../../JokeContext/JokeContext";
 
-function Search({ handleOptionChange, checked }) {
+function Search() {
+
+    const {
+        selected,
+        handleOptionChange
+    } = useContext(JokeContext);
+
     return (
         <form className="joke-options__form">
             <input
@@ -9,7 +16,7 @@ function Search({ handleOptionChange, checked }) {
                 type="radio"
                 name="react-tips"
                 value="option3"
-                checked={checked === "option3"}
+                checked={selected === "option3"}
                 onChange={handleOptionChange}
             />
             <label className="joke-options__form-label" htmlFor="search">Search</label>

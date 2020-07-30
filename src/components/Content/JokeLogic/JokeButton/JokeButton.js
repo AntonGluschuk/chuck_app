@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./JokeButton.css"
+import {JokeContext} from "../../../JokeContext/JokeContext";
 
-function JokeButton({ getAJoke, query, selected }) {
+function JokeButton({ getAJoke }) {
+
+    const {
+        query,
+        selected
+    } = useContext(JokeContext);
 
     return (
         <div>

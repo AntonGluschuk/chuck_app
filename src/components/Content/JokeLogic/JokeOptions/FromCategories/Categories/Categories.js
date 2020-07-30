@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./Categories.css";
 import styled from "styled-components";
+import {JokeContext} from "../../../../../JokeContext/JokeContext";
 
 const Button = styled.button`
   color: #ABABAB;
@@ -44,11 +45,19 @@ const ButtonToggle = styled(Button)`
   `}
 `;
 
-function Categories({ categories, active, setActive }) {
+function Categories() {
 
+    const {
+        categories,
+        active,
+        setActive
+    } = useContext(JokeContext);
+
+    /*Preventing from page refreshing after selecting category*/
     const handleSubmit = e => {
         e.preventDefault();
     };
+
     return (
         <form className="categories" onSubmit={handleSubmit}>
             {categories.map(category =>

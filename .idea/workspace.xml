@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/SearchInput/SearchInput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/SearchInput/SearchInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/JokeContext/JokeReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/Joke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/Joke/LikeJokeButton/LikeJokeButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeButton/JokeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeButton/JokeButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/Categories/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/Categories/Categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/FromCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/FromCategories/FromCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/JokeOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Random/Random.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Random/Random.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JokeContext/JokeContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/FavJoke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/FavJoke/UnlikeJokeButton/UnlikeJokeButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/SideButton/SideButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,15 +62,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains2\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeItself\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\msi2020\src\components\Sidebar" />
       <recent name="C:\msi2020\src\components\JokeContext" />
       <recent name="C:\msi2020\src\components" />
       <recent name="C:\msi2020\src" />
       <recent name="C:\msi2020\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\msi2020\src\components\Content\JokeLogic\JokeItself\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -156,7 +170,12 @@
       <workItem from="1595090989087" duration="4798000" />
       <workItem from="1595250623211" duration="7373000" />
       <workItem from="1595351012159" duration="5441000" />
-      <workItem from="1595578630601" duration="6225000" />
+      <workItem from="1595578630601" duration="6402000" />
+      <workItem from="1595669439263" duration="9228000" />
+      <workItem from="1595864163548" duration="1708000" />
+      <workItem from="1595933806374" duration="8078000" />
+      <workItem from="1596034867777" duration="1035000" />
+      <workItem from="1596127507111" duration="8215000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -417,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595267486334</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="20:43 24/07/20 excluded duplicate jokes">
+      <created>1595612653336</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1595612653336</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +464,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="20:29 16/05/20 implement context API, finished favourites" />
     <MESSAGE value="20:31 16/05/20 removed redundant" />
     <MESSAGE value="23:40 18/05/20 implement localStorage and made few fixes" />
     <MESSAGE value="21:12 19/05/20 start refactoring CSS" />
@@ -463,6 +488,7 @@
     <MESSAGE value="21:08 14/07/20 fix overlap text bug in sidebar" />
     <MESSAGE value="21:45 15/07/20 added feature -save liked jokes in main-, split like/unlike buttons into separate components" />
     <MESSAGE value="20:50 20/07/20 exclude duplicate jokes, this feature still in working" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:50 20/07/20 exclude duplicate jokes, this feature still in working" />
+    <MESSAGE value="20:43 24/07/20 excluded duplicate jokes" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:43 24/07/20 excluded duplicate jokes" />
   </component>
 </project>

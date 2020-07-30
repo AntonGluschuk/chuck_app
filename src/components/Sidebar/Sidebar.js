@@ -6,19 +6,11 @@ import FavJoke from "./FavJoke/FavJoke";
 function Sidebar() {
 
     const {
-        setJokes,
-        favJokes,
-        setFavJokes,
-        visibleSide
+        visibleSide,
+        favJokes
     } = useContext(JokeContext);
 
-    const unlikeJoke = (id) => {
-        const newLikedJokes = favJokes.filter(joke => joke.id !== id);
-        setFavJokes(newLikedJokes);
-        setJokes(jokes => jokes.map(item => item.id === id ? {...item, isFavourite: false} : item));
-    };
-
-    /*Change className for aside sidebar*/
+    /*Change className for aside "sidebar" tag*/
     const openSide = (opS) => {
         if(!visibleSide) {
             opS = "";
@@ -40,7 +32,6 @@ function Sidebar() {
                             id={favJoke.id}
                             category={favJoke.categories}
                             updated_at={favJoke.updated_at}
-                            unlikeJoke={unlikeJoke}
                             key={favJoke.id}
                         />
                     )

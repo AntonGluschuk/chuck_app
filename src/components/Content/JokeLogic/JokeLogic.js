@@ -11,21 +11,17 @@ function JokeLogic() {
     const {
         jokes,
         setJokes,
-        favJokes,
-        setFavJokes,
         selected,
-        setSelected,
         loading,
         setLoading,
-        categories,
         setCategories,
         active,
-        setActive,
         query,
         setQuery,
         setValidSearchValue
     } = useContext(JokeContext);
 
+    /*Getting categories of jokes from chuckNorris.io API*/
     useEffect(() => {
        async function getCategories() {
             const response = await fetch('https://api.chucknorris.io/jokes/categories');
@@ -35,6 +31,7 @@ function JokeLogic() {
         getCategories().catch((e) => alert(e));
     }, []);
 
+    /*Getting jokes from chuckNorris.io API*/
     const getAJoke = async () => {
         setLoading(true);
         if(selected === "option1") {
@@ -57,6 +54,7 @@ function JokeLogic() {
         }
     };
 
+    /*Clear search input field*/
     const checkValidQuery = (singleJ) => {
         if(singleJ === undefined) {
             setQuery("");
@@ -70,40 +68,12 @@ function JokeLogic() {
         }
     };
 
-    const handleOptionChange = e => {
-        if(selected === "option1" || selected === "option3") {
-            setActive("animal");
-            setSelected(e.target.value);
-        }
-        else if(selected === "option1" || selected === "option2") {
-            setValidSearchValue(true);
-            setSelected(e.target.value);
-        } else {
-            setSelected(e.target.value);
-        }
-    };
-
-    const likeJoke = (id) => {
-        let favJoke;
-
-        if (favJokes.find(joke => joke.id === id)) return;
-
-        favJoke = jokes.find(joke => joke.id === id);
-
-        setFavJokes([favJoke, ...favJokes]);
-        setJokes(jokes => jokes.map(item => item.id === id ? {...item, isFavourite: true} : item));
-    };
-
-    const unlikeJoke = (id) => {
-        const newLikedJokes = favJokes.filter(joke => joke.id !== id);
-        setFavJokes(newLikedJokes);
-        setJokes(jokes => jokes.map(item => item.id === id ? {...item, isFavourite: false} : item));
-    };
-
+    /*Generate single joke from array of jokes(received from 3rd option - Search) */
     const randomSearchJoke = (jokes_r) =>  {
-        let randJ = Math.floor(Math.random() * jokes_r.length);
-      return jokes_r[randJ];
+      return jokes_r[Math.floor(Math.random() * jokes_r.length)];
     };
+
+    /*Prevent render duplicate jokes*/
     const getUnique = (jokes, data) => {
         if (jokes.find(joke => joke.id === data.id)) {
            return null;
@@ -111,6 +81,7 @@ function JokeLogic() {
             setJokes([data, ...jokes]);
         }
     };
+
     return (
         <div className="joke-logic">
             <div className="joke-logic__logo">
@@ -122,19 +93,10 @@ function JokeLogic() {
                 <div className="joke-logic__intro-subtitle">Let's try to find a joke for you:</div>
 
                 {/*Radio Buttons*/}
-                <JokeOptions
-                    handleOptionChange={handleOptionChange}
-                    selected={selected}
-                    active={active}
-                    setActive={setActive}
-                    categories={categories}
-                    query={query}
-                    setQuery={setQuery}
-                    getAJoke={getAJoke}
-                />
+                <JokeOptions getAJoke={getAJoke} />
 
                 {/*Get a Joke Button*/}
-                <JokeButton getAJoke={getAJoke} query={query} selected={selected}/>
+                <JokeButton getAJoke={getAJoke} />
             </div>
             {/*Loader*/}
             {loading && <span className="joke-logic__loader"> </span>}
@@ -147,8 +109,6 @@ function JokeLogic() {
                             id={joke.id}
                             category={joke.categories}
                             updated_at={joke.updated_at}
-                            likeJoke={likeJoke}
-                            unlikeJoke={unlikeJoke}
                             jokeIsF={joke.isFavourite}
                             key={joke.id}
                         />

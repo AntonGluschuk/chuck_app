@@ -9,7 +9,7 @@ function Content() {
         visibleSide
     } = useContext(JokeContext);
 
-    /*Change className for div content*/
+    /*Change className for div "content" tag*/
     const deactivateContent = (closeContent) => {
         if(!visibleSide) {
             closeContent = "";
