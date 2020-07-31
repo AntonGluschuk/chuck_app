@@ -22,6 +22,16 @@ function SearchInput({ getAJoke }) {
         setQuery(e.target.value);
     };
 
+    /*Allow to press Enter to make a search for a Joke*/
+    const enterKeyPress = e => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            if (query.length >= 3) {
+                getAJoke();
+            }
+        }
+    };
+
     return (
         <form className="joke-options__search-form">
             <input
@@ -30,14 +40,7 @@ function SearchInput({ getAJoke }) {
                 placeholder="Free text search..."
                 value={query}
                 onChange={handleSearchValue}
-                onKeyPress={(e) => {
-                    if (e.key === "Enter") {
-                        e.preventDefault();
-                        if (query.length >= 3) {
-                            getAJoke();
-                        }
-                    }
-                }}
+                onKeyPress={enterKeyPress}
             />
             {!validSearch && <span className="joke-options__invalid-size">Text size must be between 3 and 120 characters</span>}
             {!validSearchValue && <span className="joke-options__invalid-value">Enter a valid search value</span>}
