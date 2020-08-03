@@ -19,7 +19,7 @@ function SearchInput({ getAJoke }) {
         } else {
             setValidSearch(true);
         }
-        setQuery(e.target.value);
+        setQuery(e.target.value.replace(/[^A-Za-z]/ig, ''));
     };
 
     /*Allow to press Enter to make a search for a Joke*/
