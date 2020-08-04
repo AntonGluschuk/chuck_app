@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/SearchInput/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeOptions/Search/SearchInput/SearchInput.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,7 +159,9 @@
       <workItem from="1596034867777" duration="1035000" />
       <workItem from="1596127507111" duration="9072000" />
       <workItem from="1596188907258" duration="14157000" />
-      <workItem from="1596458838160" duration="9261000" />
+      <workItem from="1596458838160" duration="9566000" />
+      <workItem from="1596524206823" duration="344000" />
+      <workItem from="1596540031433" duration="7155000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -449,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596215765831</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="20:48 03/08/20 prevent digits and special characters in Search input field, added unit tests to App component">
+      <created>1596477001551</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1596477001551</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,7 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="22:05 20/05/20 fix joke rectangle, fix categories_list" />
     <MESSAGE value="21:14 21/05/20 working on tablet view trying to fix sidebar" />
     <MESSAGE value="21:43 22/05/20 working on tablet view still trying to fix sidebar" />
     <MESSAGE value="11:40 23/05/20 rewrite readme file" />
@@ -495,6 +502,7 @@
     <MESSAGE value="22:05 30/07/20 implement Reducer, clear redundant code" />
     <MESSAGE value="20:05 31/07/20 clear unused dependencies, added test to App component" />
     <MESSAGE value="20:15 31/07/20 added enterKeyPress function to the SearchInput component" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:15 31/07/20 added enterKeyPress function to the SearchInput component" />
+    <MESSAGE value="20:48 03/08/20 prevent digits and special characters in Search input field, added unit tests to App component" />
+    <option name="LAST_COMMIT_MESSAGE" value="20:48 03/08/20 prevent digits and special characters in Search input field, added unit tests to App component" />
   </component>
 </project>
