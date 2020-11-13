@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d840c6-a1ba-45fb-b706-75d1fe56babd" name="Default Changelist" comment="20:58 04/08/20 allow numbers in Search input field">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/msi2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chuck_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +32,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Content/JokeLogic/JokeItself/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -167,7 +166,8 @@
       <workItem from="1596806566972" duration="337000" />
       <workItem from="1596822401558" duration="94000" />
       <workItem from="1597828135217" duration="432000" />
-      <workItem from="1602515882528" duration="246000" />
+      <workItem from="1602515882528" duration="1012000" />
+      <workItem from="1602517008511" duration="168000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, working on button onChange">
       <created>1588601817940</created>
@@ -470,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596563960743</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="18:22 12/10/20 clear redundancy">
+      <created>1602516185086</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1602516185087</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="21:43 22/05/20 working on tablet view still trying to fix sidebar" />
     <MESSAGE value="11:40 23/05/20 rewrite readme file" />
     <MESSAGE value="11:48 23/05/20 fix readme file" />
     <MESSAGE value="11:51 23/05/20 fix readme file" />
@@ -533,6 +539,7 @@
     <MESSAGE value="20:15 31/07/20 added enterKeyPress function to the SearchInput component" />
     <MESSAGE value="20:48 03/08/20 prevent digits and special characters in Search input field, added unit tests to App component" />
     <MESSAGE value="20:58 04/08/20 allow numbers in Search input field" />
-    <option name="LAST_COMMIT_MESSAGE" value="20:58 04/08/20 allow numbers in Search input field" />
+    <MESSAGE value="18:22 12/10/20 clear redundancy" />
+    <option name="LAST_COMMIT_MESSAGE" value="18:22 12/10/20 clear redundancy" />
   </component>
 </project>
