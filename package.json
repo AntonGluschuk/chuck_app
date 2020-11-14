@@ -2,6 +2,7 @@
   "name": "chuck_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://react-chuck.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
