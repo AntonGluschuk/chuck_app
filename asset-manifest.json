@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/chuck_app/static/css/main.65b6535e.chunk.css",
-    "main.js": "/chuck_app/static/js/main.baf3877f.chunk.js",
-    "main.js.map": "/chuck_app/static/js/main.baf3877f.chunk.js.map",
-    "runtime-main.js": "/chuck_app/static/js/runtime-main.3a35e023.js",
-    "runtime-main.js.map": "/chuck_app/static/js/runtime-main.3a35e023.js.map",
-    "static/js/2.6b616d70.chunk.js": "/chuck_app/static/js/2.6b616d70.chunk.js",
-    "static/js/2.6b616d70.chunk.js.map": "/chuck_app/static/js/2.6b616d70.chunk.js.map",
+    "main.css": "/chuck_app/static/css/main.95272a62.chunk.css",
+    "main.js": "/chuck_app/static/js/main.596e0e31.chunk.js",
+    "main.js.map": "/chuck_app/static/js/main.596e0e31.chunk.js.map",
+    "runtime-main.js": "/chuck_app/static/js/runtime-main.b0223f03.js",
+    "runtime-main.js.map": "/chuck_app/static/js/runtime-main.b0223f03.js.map",
+    "static/js/2.ebe96141.chunk.js": "/chuck_app/static/js/2.ebe96141.chunk.js",
+    "static/js/2.ebe96141.chunk.js.map": "/chuck_app/static/js/2.ebe96141.chunk.js.map",
     "index.html": "/chuck_app/index.html",
-    "precache-manifest.bddf19a88a128375f8f42702ec251b73.js": "/chuck_app/precache-manifest.bddf19a88a128375f8f42702ec251b73.js",
+    "precache-manifest.3061165a0a0a36a76b2d66b71f2497be.js": "/chuck_app/precache-manifest.3061165a0a0a36a76b2d66b71f2497be.js",
     "service-worker.js": "/chuck_app/service-worker.js",
-    "static/css/main.65b6535e.chunk.css.map": "/chuck_app/static/css/main.65b6535e.chunk.css.map",
-    "static/js/2.6b616d70.chunk.js.LICENSE.txt": "/chuck_app/static/js/2.6b616d70.chunk.js.LICENSE.txt",
+    "static/css/main.95272a62.chunk.css.map": "/chuck_app/static/css/main.95272a62.chunk.css.map",
+    "static/js/2.ebe96141.chunk.js.LICENSE.txt": "/chuck_app/static/js/2.ebe96141.chunk.js.LICENSE.txt",
     "static/media/LikeJokeButton.css": "/chuck_app/static/media/heart-empty-icon.e977fb9e.svg",
     "static/media/UnlikeJokeButton.css": "/chuck_app/static/media/heart-full-icon.2a34fbed.svg",
     "static/media/FavJoke.css": "/chuck_app/static/media/message-icon.ee31211c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a35e023.js",
-    "static/js/2.6b616d70.chunk.js",
-    "static/css/main.65b6535e.chunk.css",
-    "static/js/main.baf3877f.chunk.js"
+    "static/js/runtime-main.b0223f03.js",
+    "static/js/2.ebe96141.chunk.js",
+    "static/css/main.95272a62.chunk.css",
+    "static/js/main.596e0e31.chunk.js"
   ]
 }
