@@ -30,7 +30,8 @@ function JokeLogic() {
       setCategories(data);
     }
     getCategories().catch((e) => alert(e));
-  }, [setCategories]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   /*Getting jokes from chuckNorris.io API*/
   const getAJoke = async () => {
